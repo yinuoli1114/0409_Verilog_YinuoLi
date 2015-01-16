@@ -1,0 +1,91 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/ecegrid/a/mg104/ece337/Lab4
+T_opt
+Vg8hLAc[:cC3OB]=5GT;:k3
+04 18 4 work tb_counter_wrapper fast 0
+=1-000000000000-547c1926-dcfad-45c8
+o-quiet -auto_acc_if_foreign -work mapped_work -L /home/ecegrid/a/ece337/Class0.5u/ECE337_IP/vsim -L /home/ecegrid/a/ece337/Class0.5u/GOLD_LIB -Lf /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work
+n@_opt
+OL;O;10.1b;51
+vcounter_wrapper
+If9i_@m4PCJTzb`iGP7jn61
+VKPcgzNk^1dDbBH3NPP[U?0
+Z1 d/home/ecegrid/a/mg104/ece337/Lab4
+Z2 w1417419042
+Z3 8mapped/counter_wrapper.v
+Z4 Fmapped/counter_wrapper.v
+L0 110
+Z5 OL;L;10.1b;51
+r1
+31
+Z6 !s108 1417419042.288146
+Z7 !s107 mapped/counter_wrapper.v|
+Z8 !s90 -work|mapped_work|mapped/counter_wrapper.v|
+Z9 o-work mapped_work
+Z10 tCoverage 63 CoverExcludeDefault 1 CoverOpt 1 CoverFEC 0 CoverShortCircuit 0
+!s100 ]IDLLzYm0M=3KT]9VPh`62
+!i10b 1
+!s85 0
+vflex_counter
+I^B19AL8mQe_2ZN@FVmeIZ2
+VXg12mjHb8nnae9jZVe7111
+R1
+R2
+R3
+R4
+L0 2
+R5
+r1
+31
+R6
+R7
+R8
+R9
+R10
+!s100 X1J`1Ma>aNMAaHKhj4d?k3
+!i10b 1
+!s85 0
+vsync
+I:O6P1>P7b`]]ldnk6CUIZ0
+VD_8QW45@Vn?46ZzGMY@``2
+R1
+R2
+R3
+R4
+L0 84
+R5
+r1
+31
+R6
+R7
+R8
+R9
+R10
+!s100 L:8LJ8_6zcjT23TeSLb[c3
+!i10b 1
+!s85 0
+vtb_counter_wrapper
+Z11 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+IG=hkf;FmLA5R]]N6QO@l<3
+VCz>ebSgP]?`V:m=eCRaU20
+S1
+R1
+w1417417104
+8source/tb_counter_wrapper.sv
+Fsource/tb_counter_wrapper.sv
+L0 9
+R5
+r1
+31
+R9
+R10
+!i10b 1
+!s100 doGgj2:<A`boCJnlELLX[0
+!s105 tb_counter_wrapper_sv_unit
+!s85 0
+!s108 1417419042.526269
+!s107 source/tb_counter_wrapper.sv|
+!s90 -work|mapped_work|source/tb_counter_wrapper.sv|

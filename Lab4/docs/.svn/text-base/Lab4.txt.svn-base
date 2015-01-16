@@ -1,0 +1,39 @@
+Question 1: 
+  What is the minimum amount of time that data_ready must remain asserted to ensure correct operation? 
+   3 clock cycles, synchronizer needs 2 clock cycles
+
+  What is the minimum amount of time, in clock cycles, that data must remain valid after data_ready is asserted in order to ensure correct operation? (You may assume that all setup and hold times, as well as any propagation delays, are negligible.)
+   1 clock cycle
+
+Question 2:
+
+idle: if(dr == 0) goto idle
+store: if(dr == 0) goto eidle
+       reg[7] = ext_data
+sort1: reg[1] = reg[2]
+sort2: reg[2] = reg[3]
+sort3: reg[3] = reg[4]
+sort4: reg[4] = reg[5]
+add1: reg[6] = reg[1] + reg[2]
+      if(overflow) goto eidle
+add2: reg[7] = reg[3] + reg[4]
+      if(overflow) goto eidle
+add3: reg[0] = reg[6] + reg[7]
+      if(overflow) goto eidle
+
+eidle: err = 1
+       if(dr == 1) goto store
+       if(dr == 0) goto eidle
+
+Question 3:
+   The filtered image is more blurred than the original image. Because the filtered image actually takes the pixels fro.m the original image and divide them by four so that the color looks evenly.
+
+Question 4:
+   fscanf,fseek,fopen,fwrite,ftell,fatal
+
+Question 5:
+    specifier:i,d,o,x,f,a,c,s,p,[a-z],n,%
+    
+
+
+

@@ -1,0 +1,17 @@
+idle: if(dr == 0) goto idle
+store: if(dr == 0) goto eidle
+       reg[5] = ext_data
+sort1: reg[1] = reg[2]
+sort2: reg[2] = reg[3]
+sort3: reg[3] = reg[4]
+sort4: reg[4] = reg[5]
+add1: reg[6] = reg[1] + reg[2]
+      if(overflow) goto eidle
+add2: reg[7] = reg[3] + reg[4]
+      if(overflow) goto eidle
+add3: reg[0] = reg[6] + reg[7]
+      if(overflow) goto eidle
+
+eidle: err = 1
+       if(dr == 1) goto store
+       if(dr == 0) goto eidle

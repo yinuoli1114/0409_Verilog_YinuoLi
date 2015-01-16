@@ -1,0 +1,92 @@
+// $Id: $
+// File name:   tb_round_counter.sv
+// Created:     11/19/2014
+// Author:      Yinuo Li
+// Lab Section: 337-04
+// Version:     1.0  Initial Design Entry
+// Description: test bensh for round counter
+
+`timescale 1ns / 10ps
+module tb_round_counter ();
+   //basic parameters
+   localparam CLK_PERIOD = 2.5;
+   localparam CHECK_DELAY = 1;
+
+   reg clk;
+   reg n_rst;
+   reg clear;
+   reg count_enable;
+   //reg [4:0] rollover_val;
+   reg [4:0] count_out;
+   reg rollover_flag;
+   reg ed_sel;
+   integer i;
+
+
+   // DUT portmaps
+   round_counter ROUND_COUNTER
+   (
+   	.clk(clk),
+   	.n_rst(n_rst),
+   	.clear(clear),
+   	.count_enable(count_enable),
+   	.count_out(count_out),
+   	.rollover_flag(rollover_flag),
+   	.ed_sel(ed_sel)
+   	);
+
+   // Clock generation block
+   always
+     begin
+       clk = 1'b0;
+      #(CLK_PERIOD/2.0);
+      clk = 1'b1;
+      #(CLK_PERIOD/2.0);
+     end
+
+   //test bench main process
+   initial
+   begin
+
+   n_rst = 1'b1;
+   clear = 1'b1;
+   count_enable = 1'b0;
+   //rollover_val = 5'b00001;
+   ed_sel = 1'b1;
+
+   @(negedge clk);
+   n_rst = 1'b0;
+   #(CLK_PERIOD * 2)
+   n_rst = 1'b1;
+   count_enable = 1'b0;
+   clear = 1'b0;
+   //#(CLK_PERIOD * 20)
+   for(i = 0; i < 30; i = i+1)
+   begin
+      //for(i = 0; i < 8; i = i+1)
+      //begin
+         @(posedge clk)
+         count_enable = 1'b1;
+         @(posedge clk)
+         count_enable = 1'b0;
+         #(CLK_PERIOD * 8)
+   end
+
+
+
+
+
+
+
+
+
+
+   end
+
+   endmodule
+
+
+
+
+
+

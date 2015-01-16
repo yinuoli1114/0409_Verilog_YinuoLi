@@ -1,0 +1,20 @@
+Lab4 Teamwork Evaluation
+
+Yinuo Li (mg104), Jason Lin (mg116)
+
+1. This team member made a sincere effort to figure out the design and testing so as to be able to contribute to the team effort.
+   Yinuo Li 5, Jason Lin 5
+This team member was respectful and considerate of other team members.
+   Yinuo Li 5, Jason Lin 5
+This team member fulfilled all promised or commitments to team members including those listed in gound rules 1-5
+   Yinuo Li 5, Jason Lin 5
+You were able to achieve or learn more with this partner than you would have without.
+   Yinuo Li 5, Jason Lin 5
+
+2. Jason helped me on understanding the overall design architecture and helped me debug for the avg_four.sv. I helped him to debug his flex_counter.sv which had logic problem. We tested the overall design together
+
+3. We met twice. We texted to each other to set up the meeting time.
+
+4. I helped Jason on debugging flex_counter.sv, I helped him to figure out how to debug through the waves simulated by the given test bench.
+
+5. Jason helped me on understanding the overall design architecture and helped me debug for the avg_four.sv. He also figured out one dignificant error in the mapped part which impeded the data input. I learned from Jason that how the overall desgin architecture works.
