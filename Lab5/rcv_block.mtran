@@ -1,0 +1,15 @@
+# //  ModelSim SE-64 10.1b Apr 26 2012 Linux 2.6.32-431.29.2.el6.x86_64
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim +no_glitch_msg -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -L /home/ecegrid/a/ece337/Class0.5u/GOLD_LIB -Lf /home/ecegrid/a/ece337/Class0.5u/ECE337_IP/vsim -coverage -i -t ps mapped_work.tb_rcv_block 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: mapped/rcv_block.v(142): Module 'flex_counter' is not defined.
+# ** Error: mapped/rcv_block.v(147): Module 'flex_counter' is not defined.
+# ** Error: /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/osu05_stdcells.vhdl(368): Vopt Compiler exiting
+# Error loading design

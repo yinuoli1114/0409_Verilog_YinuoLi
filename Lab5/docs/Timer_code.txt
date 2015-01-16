@@ -1,0 +1,23 @@
+
+wait until the middle of the start bit
+then wait until the middle of the first data bit
+flex_counter #(4) TEN
+     (
+      .clk(clk),
+      .n_rst(n_rst),
+      .clear(packet_done),
+      .count_enable(enable_timer),
+      .rollover_val(4'b1010),
+      //.count_out(count_out10),
+      .rollover_flag(shift_strobe)
+      );
+flex_counter #(4) NINE
+     (
+      .clk(clk),
+      .n_rst(n_rst),
+      .clear(packet_done),
+      .count_enable(shift_strobe),
+      .rollover_val(4'b1001),
+      //.count_out(count_out9),
+      .rollover_flag(packet_done)
+      );

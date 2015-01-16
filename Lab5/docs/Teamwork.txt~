@@ -1,0 +1,34 @@
+Lab5 Teamwork Evaluation
+
+Name: Yinuo Li (mg104)
+Partner: Jason Lin (mg116)
+
+1. Rate yourself and your partner or partners on the following criteria. Apply each criterion to each of your partners individually. Answer on a scale of 1 to 5 where 1 = strongly disagree, 3 = indifferent, 5 = strongly agree.
+
+Yinuo Li:
+
+(5)This team member made a sincere effort (to the best that you can tell) to figure out the design and testing so as to be able to contribute to the team effort.
+(5)This team member was respectful and considerate of other team members.
+(5)This team member fulfilled all promised or commitments to team members includingthose listed in ground rules 1-5.
+(5)You were able to achieve or learn more with this partner than you would have without.
+
+Jason Lin:
+
+(5)This team member made a sincere effort (to the best that you can tell) to figure out the design and testing so as to be able to contribute to the team effort.
+(5)This team member was respectful and considerate of other team members.
+(5)This team member fulfilled all promised or commitments to team members includingthose listed in ground rules 1-5.
+(5)You were able to achieve or learn more with this partner than you would have without.
+
+2. Describe briefly the contribution of each team member.
+Yinuo Li: Explain the 9 bit shift register logic and helpe debug for Jason.
+Jason Li: Explain the RCU state transition, develop the several test benches for each module and helpe debug for Yinuo.
+
+3. How many times did you and your team-mate(s) meet? How frequently did you e-mail or instant message your team-mate(s)?
+Twice. We texted each other to set up a meeting time.
+
+4. What did you contribute to the team effort? 
+I helped Jason to debug for some of his modules.
+
+5. What did each of your collaborators contribute? If you learned something useful from this person, what was it?
+Jason Lin teached me how to use "state ports" in wave to debug for the RCU state transition and also helped me debug for other modules.
+

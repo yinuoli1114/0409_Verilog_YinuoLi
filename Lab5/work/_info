@@ -1,0 +1,68 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/ecegrid/a/mg104/ece337/Lab5
+vrcv_block
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Z2 IfgBVF[IH@><8F6fagTZ;U0
+Z3 VTKKQhEoKSGn@M>X3]FgbL1
+S1
+Z4 d/home/ecegrid/a/mg104/ece337/Lab5
+Z5 w1411877275
+Z6 8source/rcv_block.sv
+Z7 Fsource/rcv_block.sv
+L0 9
+Z8 OL;L;10.1b;51
+r1
+31
+Z9 tCoverage 63 CoverExcludeDefault 1 CoverOpt 1 CoverFEC 0 CoverShortCircuit 0
+Z10 !s100 :zUk]^b;GP3=gNBzYe>M33
+Z11 !s105 rcv_block_sv_unit
+Z12 !s108 1411877278.158943
+Z13 !s107 source/rcv_block.sv|
+Z14 !s90 -reportprogress|300|source/rcv_block.sv|
+!i10b 1
+!s85 0
+vsr_9bit
+R1
+Z15 IbMP;J8OgDXR38YfcS@DAl0
+Z16 VzL0DSSzGn7hWk:i@TQ`ec1
+S1
+R4
+Z17 w1411877476
+Z18 8source/sr_9bit.sv
+Z19 Fsource/sr_9bit.sv
+L0 9
+R8
+r1
+31
+R9
+!i10b 1
+Z20 !s100 z]IFN_KG0Ya?4TPJTbC?02
+Z21 !s105 sr_9bit_sv_unit
+!s85 0
+Z22 !s108 1411877478.953956
+Z23 !s107 source/sr_9bit.sv|
+Z24 !s90 -reportprogress|300|source/sr_9bit.sv|
+vtimer
+R1
+!i10b 1
+!s100 TO_[LJdflcdOeg1b?h[031
+IaI:kSD^hK7F8>AzgD8Y`?2
+VkUG6Yd@=FAX?Va95zaL]z0
+!s105 timer_sv_unit
+S1
+R4
+w1411878163
+8source/timer.sv
+Fsource/timer.sv
+L0 8
+R8
+r1
+!s85 0
+31
+!s108 1411878165.593019
+!s107 source/timer.sv|
+!s90 -reportprogress|300|source/timer.sv|
+R9

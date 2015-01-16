@@ -1,0 +1,204 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/ecegrid/a/mg104/ece337/Lab5
+vflex_stp_sr_NUM_BITS9_SHIFT_MSB0
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Z2 I[8MSOX67<k9aUg;?bSz]o0
+Z3 V[<c>2X4_YR_]6mPDDB=jG2
+Z4 !s105 rcv_block_v_unit
+S1
+Z5 d/home/ecegrid/a/mg104/ece337/Lab5
+Z6 w1412223008
+Z7 8mapped/rcv_block.v
+Z8 Fmapped/rcv_block.v
+L0 2
+Z9 OL;L;10.1b;51
+r1
+31
+Z10 !s108 1412223011.333104
+Z11 !s107 mapped/rcv_block.v|
+Z12 !s90 -sv|-work|mapped_work|mapped/rcv_block.v|
+Z13 o-sv -work mapped_work
+Z14 tCoverage 63 CoverExcludeDefault 1 CoverOpt 1 CoverFEC 0 CoverShortCircuit 0
+Z15 nflex_stp_sr_@n@u@m_@b@i@t@s9_@s@h@i@f@t_@m@s@b0
+!i10b 1
+Z16 !s100 `JziGe^gmUjZm7A=6AWX:1
+!s85 0
+vrcu
+R1
+Z17 Ih1dTcQ06f5oEH`1?OD[J`3
+Z18 VY[fE37nKSVLQhQ5akMC@b0
+R4
+S1
+R5
+R6
+R7
+R8
+L0 86
+R9
+r1
+31
+R10
+R11
+R12
+R13
+R14
+!i10b 1
+Z19 !s100 FQ<hBIV>hR70j<TW0:FBS3
+!s85 0
+vrcv_block
+R1
+Z20 IFGbWaHThSDToM@4HB^WLc1
+Z21 VTKKQhEoKSGn@M>X3]FgbL1
+R4
+S1
+R5
+R6
+R7
+R8
+Z22 L0 231
+R9
+r1
+31
+R10
+R11
+R12
+R13
+R14
+!i10b 1
+Z23 !s100 BlFW9RiDA4B6HXA=aH;Mf0
+!s85 0
+vrx_data_buff
+R1
+Z24 IcgMOMb6ZbMY]<SIM@H>h=3
+Z25 Vn?m@;_PX6VlV>gDRbLU7=2
+R4
+S1
+R5
+R6
+R7
+R8
+Z26 L0 168
+R9
+r1
+31
+R10
+R11
+R12
+R13
+R14
+!i10b 1
+Z27 !s100 [n^3m;QfDTgNEOQ3`M9Z@1
+!s85 0
+vsr_9bit
+R1
+Z28 Io`i7g6A]GX5Gc?_V0aQ]63
+Z29 VzL0DSSzGn7hWk:i@TQ`ec1
+R4
+S1
+R5
+R6
+R7
+R8
+L0 53
+R9
+r1
+31
+R10
+R11
+R12
+R13
+R14
+!i10b 1
+Z30 !s100 6g230e=zTUMKkJ;ke:Z]93
+!s85 0
+vstart_bit_det
+R1
+Z31 IA>Z<JWd=Xai6`oHoZaQoh3
+Z32 V@Q`H:3R^iY?>oK>AJJGXE2
+R4
+S1
+R5
+R6
+R7
+R8
+L0 68
+R9
+r1
+31
+R10
+R11
+R12
+R13
+R14
+!i10b 1
+Z33 !s100 [bPDcF0HGXH41HGLHKYn73
+!s85 0
+vstop_bit_chk
+R1
+Z34 I0hH<DfRmVM[9BzY_3[ISe2
+Z35 VMFjYILHNleTb>O0@<]zFS2
+R4
+S1
+R5
+R6
+R7
+R8
+Z36 L0 151
+R9
+r1
+31
+R10
+R11
+R12
+R13
+R14
+!i10b 1
+Z37 !s100 dM@Jf1TNh6[L=19>hmL8A3
+!s85 0
+vtb_rcv_block
+R1
+!i10b 1
+!s100 ilVnLN]3Kg?QAAfl1hLdg2
+ID4YgdghGCT@hl5ZUSJXF>2
+V65]n4T5`dRdCXi^Z6<<aW0
+!s105 tb_rcv_block_sv_unit
+S1
+R5
+w1411840766
+8source/tb_rcv_block.sv
+Fsource/tb_rcv_block.sv
+L0 11
+R9
+r1
+!s85 0
+31
+!s108 1412223011.741658
+!s107 source/tb_rcv_block.sv|
+!s90 -sv|-work|mapped_work|source/tb_rcv_block.sv|
+R13
+R14
+vtimer
+R1
+Z38 ID`3gB8kQIZ<jDUK:PCDKl2
+Z39 VkUG6Yd@=FAX?Va95zaL]z0
+R4
+S1
+R5
+R6
+R7
+R8
+Z40 L0 126
+R9
+r1
+31
+R10
+R11
+R12
+R13
+R14
+!i10b 1
+Z41 !s100 h7<5=S7J1V>A>EE5;[^bX2
+!s85 0

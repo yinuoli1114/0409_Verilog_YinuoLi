@@ -1,0 +1,120 @@
+// $Id: $
+// File name:   rcu.sv
+// Created:     9/27/2014
+// Author:      Yinuo Li
+// Lab Section: 337-04
+// Version:     1.0  Initial Design Entry
+// Description: receiver control unit
+
+
+module rcu
+  (
+   input wire clk,
+   input wire n_rst,
+   input wire start_bit_detected,
+   input wire packet_done,
+   input wire framing_error,
+   output wire sbc_clear,
+   output wire sbc_enable,
+   output wire load_buffer,
+   output wire enable_timer
+   );
+   typedef enum bit [2:0] {idle,prepare,receive,check_stop,check,load} stateType;
+   stateType state;
+   stateType nstate;
+
+   reg 		sbc_clear_r;
+   reg 		sbc_enable_r;
+   reg 		load_buffer_r;
+   reg 		enable_timer_r;
+   assign sbc_clear = sbc_clear_r;
+   assign sbc_enable = sbc_enable_r;
+   assign load_buffer = load_buffer_r;
+   assign enable_timer = enable_timer_r;
+   
+   
+   always_ff @ (posedge clk, negedge n_rst)
+     begin:StateReg
+	if(n_rst == 0)
+	  begin
+	     state <= idle;
+	  end else begin
+	     state <= nstate;
+	  end
+     end
+   always_comb
+     begin:N_logic
+	nstate = idle;
+	sbc_clear_r = 0;
+	sbc_enable_r = 0;
+	load_buffer_r = 0;
+	enable_timer_r = 0;
+
+	case(state)
+	  idle:begin
+	     sbc_clear_r = 0;
+	     sbc_enable_r = 0;
+	     load_buffer_r = 0;
+	     enable_timer_r = 0;
+	     if(start_bit_detected == 1'b1)begin
+		nstate = prepare;
+	     end else begin
+		nstate = idle;
+	     end
+	  end // case: idle
+	  prepare:begin
+	     sbc_clear_r = 1;
+	     sbc_enable_r = 0;
+             load_buffer_r = 0;
+             enable_timer_r = 0;
+             nstate = receive;
+	  end
+	  receive:begin
+	     sbc_clear_r = 0;
+	     sbc_enable_r = 0;
+             load_buffer_r = 0;
+             enable_timer_r = 1;
+	     if(packet_done == 1'b1)begin
+		nstate = check_stop;
+	     end else begin
+		nstate = receive;
+	     end
+	  end // case: receive
+	  check_stop:begin
+	     sbc_clear_r = 0;
+	     sbc_enable_r = 1;
+	     load_buffer_r = 0;
+	     enable_timer_r = 0;
+	     nstate = check;
+	  end // case: check_stop
+	  check:begin
+	     sbc_clear_r = 0;
+	     sbc_enable_r = 0;
+	     load_buffer_r = 0;
+	     enable_timer_r = 0;
+	     if(framing_error == 1'b1)begin
+		nstate = idle;
+	     end else begin
+		nstate = load;
+	     end    
+	  end
+	  load:begin
+	     sbc_clear_r = 0;
+	     sbc_enable_r = 0;
+	     load_buffer_r = 1;
+	     enable_timer_r = 0;
+	     nstate = idle;
+	  end
+	endcase // case (state)
+     end // block: N_logic
+endmodule // rcu
+
+     
+	     
+	     
+	     
+	     
+
+
+
+   
