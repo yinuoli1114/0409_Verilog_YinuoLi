@@ -1,0 +1,52 @@
+# //  ModelSim SE-64 10.1b Apr 26 2012 Linux 2.6.32-431.20.3.el6.x86_64
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+vsim -i work.comparator
+# vsim -i work.comparator 
+# Loading sv_std.std
+# Loading work.comparator(fast)
+force a 16#0000 0 ns, 16#ABCD 25 ns, 16#8808 50 ns -repeat 75 ns
+force b 16#0000 0 ns, 16#9876 25 ns, 16#AAAA 50 ns -r 75 ns
+run 150 ns
+add wave  \
+sim:/comparator/a \
+sim:/comparator/b \
+sim:/comparator/gt \
+sim:/comparator/lt \
+sim:/comparator/eq \
+sim:/comparator/gte \
+sim:/comparator/lte
+force b 16#0000 0 ns, 16#9876 25 ns, 16#AAAA 50 ns -r 75 ns
+force a 16#0000 0 ns, 16#ABCD 25 ns, 16#8808 50 ns -repeat 75 ns
+run 150 ns
+force a 16#0000 0 ns, 16#ABCD 25 ns, 16#8808 50 ns -repeat 75 ns
+force b 16#0000 0 ns, 16#9876 25 ns, 16#AAAA 50 ns -r 75 ns
+vlog source/comparator.sv
+# Model Technology ModelSim SE-64 vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module comparator
+# 
+# Top level modules:
+# 	comparator
+vsim -i work.comparator
+# vsim -i work.comparator 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.comparator(fast)
+add wave *
+force a 16#0000 0 ns, 16#ABCD 25 ns, 16#8808 50 ns -repeat 75 ns
+force b 16#0000 0 ns, 16#9876 25 ns, 16#AAAA 50 ns -r 75 ns
+run 150 ns
+# Causality operation skipped due to absense of debug database file
+
+restart
+# Loading sv_std.std
+# Loading work.comparator(fast)
+force a 10#9865 0 ns, 10#8 20 ns, 10#0 40 ns -r 60 ns
+force b 10#9864 0 ns, 10#32767 20 ns, 10#0 40 ns -r 60 ns
+run 180 ns

@@ -1,0 +1,168 @@
+Synthesizing design: comparator.sv
+
+                      Design Compiler Graphical
+                            DC Ultra (TM)
+                             DFTMAX (TM)
+                         Power Compiler (TM)
+                           DesignWare (R)
+                           DC Expert (TM)
+                         Design Vision (TM)
+                          HDL Compiler (TM)
+                         VHDL Compiler (TM)
+                            DFT Compiler
+                        Library Compiler (TM)
+                         Design Compiler(R)
+
+            Version G-2012.06 for RHEL64 -- May 30, 2012
+               Copyright (c) 1988-2012 Synopsys, Inc.
+
+This software and the associated documentation are confidential and 
+proprietary to Synopsys, Inc. Your use or disclosure of this software 
+is subject to the terms and conditions of a written license agreement 
+between you, or your company, and Synopsys, Inc.
+
+Initializing...
+dc_shell> dc_shell> Running PRESTO HDLC
+Searching for ./comparator.sv
+Searching for /package/eda/synopsys/syn-G-2012.06/libraries/syn/comparator.sv
+Searching for /package/eda/synopsys/syn-G-2012.06/dw/sim_ver/comparator.sv
+Searching for ./source/comparator.sv
+Compiling source file ./source/comparator.sv
+Presto compilation completed successfully.
+Loading db file '/package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db'
+Loading db file '/package/eda/synopsys/syn-G-2012.06/libraries/syn/dw_foundation.sldb'
+1
+dc_shell> Loading db file '/package/eda/synopsys/syn-G-2012.06/libraries/syn/gtech.db'
+Loading db file '/package/eda/synopsys/syn-G-2012.06/libraries/syn/standard.sldb'
+  Loading link library 'osu05_stdcells'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'comparator'.
+1
+dc_shell> dc_shell> 1
+dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | G-2012.06-DWBB_201206.0 |     *     |
+| Licensed DW Building Blocks        | G-2012.06-DWBB_201206.0 |     *     |
+============================================================================
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'comparator'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: Design 'comparator' has no optimization constraints set. (OPT-108)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'comparator_DW01_cmp6_0'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Structuring 'comparator'
+  Mapping 'comparator'
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01   21654.0      0.00       0.0       0.0                          
+    0:00:01   21654.0      0.00       0.0       0.0                          
+    0:00:01   21654.0      0.00       0.0       0.0                          
+    0:00:01   21654.0      0.00       0.0       0.0                          
+    0:00:01   21654.0      0.00       0.0       0.0                          
+    0:00:01   21654.0      0.00       0.0       0.0                          
+    0:00:01   21654.0      0.00       0.0       0.0                          
+    0:00:01   21654.0      0.00       0.0       0.0                          
+    0:00:01   21654.0      0.00       0.0       0.0                          
+    0:00:01   21654.0      0.00       0.0       0.0                          
+    0:00:01   21654.0      0.00       0.0       0.0                          
+    0:00:01   21654.0      0.00       0.0       0.0                          
+    0:00:01   21654.0      0.00       0.0       0.0                          
+    0:00:01   21654.0      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01   21654.0      0.00       0.0       0.0                          
+    0:00:01   21654.0      0.00       0.0       0.0                          
+    0:00:01   21654.0      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01   21654.0      0.00       0.0       0.0                          
+    0:00:01   21654.0      0.00       0.0       0.0                          
+    0:00:01   21654.0      0.00       0.0       0.0                          
+    0:00:01   21654.0      0.00       0.0       0.0                          
+    0:00:01   21654.0      0.00       0.0       0.0                          
+    0:00:01   21654.0      0.00       0.0       0.0                          
+    0:00:01   21654.0      0.00       0.0       0.0                          
+    0:00:01   21654.0      0.00       0.0       0.0                          
+    0:00:01   21654.0      0.00       0.0       0.0                          
+    0:00:01   21654.0      0.00       0.0       0.0                          
+    0:00:01   21654.0      0.00       0.0       0.0                          
+    0:00:01   21654.0      0.00       0.0       0.0                          
+    0:00:01   21654.0      0.00       0.0       0.0                          
+    0:00:01   21654.0      0.00       0.0       0.0                          
+    0:00:01   21654.0      0.00       0.0       0.0                          
+Loading db file '/package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db'
+
+  Optimization Complete
+  ---------------------
+1
+dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> Writing verilog file '/home/ecegrid/a/mg104/ece337/Lab1/mapped/comparator.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1
+dc_shell> 
+Script Done
+
+dc_shell> 
+Checking Design
+
+dc_shell>  
+****************************************
+check_design summary:
+Version:     G-2012.06
+Date:        Thu Aug 28 20:39:33 2014
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      5
+    Unconnected ports (LINT-28)                                     5
+
+Cells                                                               1
+    Connected to power or ground (LINT-32)                          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'comparator_DW01_cmp6_0', port 'TC' is not connected to any nets. (LINT-28)
+Warning: In design 'comparator_DW01_cmp6_0', port 'EQ' is not connected to any nets. (LINT-28)
+Warning: In design 'comparator_DW01_cmp6_0', port 'LE' is not connected to any nets. (LINT-28)
+Warning: In design 'comparator_DW01_cmp6_0', port 'GE' is not connected to any nets. (LINT-28)
+Warning: In design 'comparator_DW01_cmp6_0', port 'NE' is not connected to any nets. (LINT-28)
+Warning: In design 'comparator', a pin on submodule 'r297' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TC' is connected to logic 0. 
+1
+dc_shell> 
+Thank you...
+Done
+
+

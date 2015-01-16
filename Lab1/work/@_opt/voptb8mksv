@@ -1,0 +1,33 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/ecegrid/a/mg104/ece337/Lab1
+T_opt
+VOCQUbLEDULckKnYfe=S8b3
+04 10 4 work comparator fast 0
+=1-000000000000-53ffb57a-1a494-316c
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.1b;51
+vcomparator
+DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+I3K=<PkLh]_2g_b5UoK`>91
+V33^>E]EI4>0ROmaHolP>A3
+S1
+Z1 d/home/ecegrid/a/mg104/ece337/Lab1
+w1409266960
+8source/comparator.sv
+Fsource/comparator.sv
+L0 11
+Z2 OL;L;10.1b;51
+r1
+31
+tCoverage 63 CoverExcludeDefault 1 CoverOpt 1 CoverFEC 0 CoverShortCircuit 0
+!s105 comparator_sv_unit
+!s90 -reportprogress|300|source/comparator.sv|
+!i10b 1
+!s100 jWTNZ__70KXJne=fH<B`I3
+!s85 0
+!s108 1409267031.929238
+!s107 source/comparator.sv|
