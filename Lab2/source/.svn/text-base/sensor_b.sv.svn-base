@@ -1,0 +1,34 @@
+// $Id: $
+// File name:   sensor_b.sv
+// Created:     9/4/2014
+// Author:      Yinuo Li
+// Lab Section: 337-04
+// Version:     1.0  Initial Design Entry
+// Description: behavioral style sensor error
+
+module sensor_b
+  (
+  input wire [3:0] sensors,
+  output reg error
+  );
+  
+  always @ (sensors)
+  begin
+    if(sensors[0] == 1)
+      begin
+        error = 1;
+      end
+    else if(sensors[2]&sensors[1] == 1)
+      begin
+        error = 1;
+      end
+    else if(sensors[3]&sensors[1] == 1)
+      begin
+        error = 1;
+      end
+    else
+      begin
+        error = 0;
+      end
+    end
+  endmodule

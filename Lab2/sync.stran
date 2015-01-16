@@ -1,0 +1,150 @@
+# //  ModelSim SE-64 10.1b Apr 26 2012 Linux 2.6.32-431.20.3.el6.x86_64
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim +no_glitch_msg -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -L /home/ecegrid/a/ece337/Class0.5u/GOLD_LIB -Lf /home/ecegrid/a/ece337/Class0.5u/ECE337_IP/vsim -coverage -i -t ps source_work/.tb_sync 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.tb_sync(fast)
+run 200 ns
+# ** Info: Correct synchronizer output after reset applied in Power on Reset test case
+#    Time: 450 ps  Scope: tb_sync File: source/tb_sync.sv Line: 66
+# ** Info: Correct synchronizer output after clock cycle while in reset applied in Power on Reset test case
+#    Time: 1450 ps  Scope: tb_sync File: source/tb_sync.sv Line: 76
+# ** Info: Correct synchronizer output after reset was released in Power on Reset test case
+#    Time: 1550 ps  Scope: tb_sync File: source/tb_sync.sv Line: 89
+# ** Info: Correct synchronizer output for Normal Operation with Input as a '1' test case
+#    Time: 4310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 106
+# ** Info: Correct synchronizer output for Setup Violation with Input as a '0' test case
+#    Time: 8310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 125
+# ** Info: Correct synchronizer output for Hold Violation with Input as a '1' test case
+#    Time: 12310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 144
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration           0
+#    Time: 16310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration           1
+#    Time: 19310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration           2
+#    Time: 22310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration           3
+#    Time: 25310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration           4
+#    Time: 28310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration           5
+#    Time: 31310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration           6
+#    Time: 34310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration           7
+#    Time: 37310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration           8
+#    Time: 40310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration           9
+#    Time: 43310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          10
+#    Time: 46310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          11
+#    Time: 49310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          12
+#    Time: 52310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          13
+#    Time: 55310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          14
+#    Time: 58310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          15
+#    Time: 61310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          16
+#    Time: 64310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          17
+#    Time: 67310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          18
+#    Time: 70310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          19
+#    Time: 73310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          20
+#    Time: 76310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          21
+#    Time: 79310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          22
+#    Time: 82310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          23
+#    Time: 85310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          24
+#    Time: 88310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          25
+#    Time: 91310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          26
+#    Time: 94310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          27
+#    Time: 97310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          28
+#    Time: 100310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          29
+#    Time: 103310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          30
+#    Time: 106310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          31
+#    Time: 109310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          32
+#    Time: 112310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          33
+#    Time: 115310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          34
+#    Time: 118310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          35
+#    Time: 121310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          36
+#    Time: 124310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          37
+#    Time: 127310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          38
+#    Time: 130310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          39
+#    Time: 133310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          40
+#    Time: 136310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          41
+#    Time: 139310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          42
+#    Time: 142310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          43
+#    Time: 145310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          44
+#    Time: 148310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          45
+#    Time: 151310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          46
+#    Time: 154310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          47
+#    Time: 157310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          48
+#    Time: 160310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          49
+#    Time: 163310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          50
+#    Time: 166310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          51
+#    Time: 169310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          52
+#    Time: 172310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          53
+#    Time: 175310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          54
+#    Time: 178310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          55
+#    Time: 181310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          56
+#    Time: 184310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          57
+#    Time: 187310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          58
+#    Time: 190310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          59
+#    Time: 193310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          60
+#    Time: 196310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164
+# ** Info: Correct synchronizer output for Steady Stream of Metastable inputs test case iteration          61
+#    Time: 199310 ps  Scope: tb_sync File: source/tb_sync.sv Line: 164

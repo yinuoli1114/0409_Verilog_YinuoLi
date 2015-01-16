@@ -1,0 +1,46 @@
+# //  ModelSim SE-64 10.1b Apr 26 2012 Linux 2.6.32-431.20.3.el6.x86_64
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim +no_glitch_msg -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -L /home/ecegrid/a/ece337/Class0.5u/GOLD_LIB -Lf /home/ecegrid/a/ece337/Class0.5u/ECE337_IP/vsim -coverage -i -t ps source_work/.tb_sensor_b 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.tb_sensor_b(fast)
+run 200 ns
+# ** Info: Test case  0 Passed!
+#    Time: 10 ns  Scope: tb_sensor_b File: source/tb_sensor_b.sv Line: 47
+# ** Info: Test case  1 Passed!
+#    Time: 20 ns  Scope: tb_sensor_b File: source/tb_sensor_b.sv Line: 47
+# ** Info: Test case  2 Passed!
+#    Time: 30 ns  Scope: tb_sensor_b File: source/tb_sensor_b.sv Line: 47
+# ** Info: Test case  3 Passed!
+#    Time: 40 ns  Scope: tb_sensor_b File: source/tb_sensor_b.sv Line: 47
+# ** Info: Test case  4 Passed!
+#    Time: 50 ns  Scope: tb_sensor_b File: source/tb_sensor_b.sv Line: 47
+# ** Info: Test case  5 Passed!
+#    Time: 60 ns  Scope: tb_sensor_b File: source/tb_sensor_b.sv Line: 47
+# ** Info: Test case  6 Passed!
+#    Time: 70 ns  Scope: tb_sensor_b File: source/tb_sensor_b.sv Line: 47
+# ** Info: Test case  7 Passed!
+#    Time: 80 ns  Scope: tb_sensor_b File: source/tb_sensor_b.sv Line: 47
+# ** Info: Test case  8 Passed!
+#    Time: 90 ns  Scope: tb_sensor_b File: source/tb_sensor_b.sv Line: 47
+# ** Info: Test case  9 Passed!
+#    Time: 100 ns  Scope: tb_sensor_b File: source/tb_sensor_b.sv Line: 47
+# ** Info: Test case 10 Passed!
+#    Time: 110 ns  Scope: tb_sensor_b File: source/tb_sensor_b.sv Line: 47
+# ** Info: Test case 11 Passed!
+#    Time: 120 ns  Scope: tb_sensor_b File: source/tb_sensor_b.sv Line: 47
+# ** Info: Test case 12 Passed!
+#    Time: 130 ns  Scope: tb_sensor_b File: source/tb_sensor_b.sv Line: 47
+# ** Info: Test case 13 Passed!
+#    Time: 140 ns  Scope: tb_sensor_b File: source/tb_sensor_b.sv Line: 47
+# ** Info: Test case 14 Passed!
+#    Time: 150 ns  Scope: tb_sensor_b File: source/tb_sensor_b.sv Line: 47
+# ** Info: Test case 15 Passed!
+#    Time: 160 ns  Scope: tb_sensor_b File: source/tb_sensor_b.sv Line: 47
