@@ -1,0 +1,56 @@
+// $Id: $
+// File name:   flex_stp_sr.sv
+// Created:     9/13/2014
+// Author:      Yinuo Li
+// Lab Section: 337-04
+// Version:     1.0  Initial Design Entry
+// Description: SIPO shift register
+
+module flex_stp_sr
+  #(
+    NUM_BITS = 4,
+    SHIFT_MSB = 1
+    )
+   (
+    input wire clk,
+    input wire n_rst,
+    input wire shift_enable,
+    input wire serial_in,
+    input wire [NUM_BITS-1:0] parallel_out
+    );
+    reg [NUM_BITS-1:0] out;
+    integer i;
+    always @ (posedge clk) begin
+	   if(n_rst == 0)
+	   begin
+	     
+	     for(i = 0; i < NUM_BITS; i = i+1)
+	     begin
+	       out[i] <= 1;
+	       end
+	   end
+	   else if((shift_enable == 1)&&(SHIFT_MSB == 1))
+		      begin
+			    out[NUM_BITS-1:0] <= {out[NUM_BITS-2:0],serial_in};
+                            end
+           else if((shift_enable == 1)&&(SHIFT_MSB == 0))
+              begin
+             out[NUM_BITS-1:0] <= {serial_in,out[NUM_BITS-1:1]};   
+		     end
+		   //else if((shift_enable == 1)&&(SHIFT_MSB == 0))
+		     //begin
+			 //out[NUM_BITS-1:0] <= {serial_in,out[NUM_BITS-1:1]}; 
+		     end
+	    // else: !if(n_rst == 1'b0)
+ // always_ff @
+      end 
+    assign parallel_out = out;
+endmodule
+	     
+		   
+		     
+     
+
+  
+   
+    

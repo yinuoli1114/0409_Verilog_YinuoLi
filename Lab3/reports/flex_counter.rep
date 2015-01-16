@@ -1,0 +1,101 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : flex_counter
+Version: G-2012.06
+Date   : Tue Sep 23 22:44:58 2014
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: current_reg[2]
+              (rising edge-triggered flip-flop)
+  Endpoint: count_out[2]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  current_reg[2]/CLK (DFFSR)               0.00       0.00 r
+  current_reg[2]/Q (DFFSR)                 0.88       0.88 f
+  count_out[2] (out)                       0.00       0.88 f
+  data arrival time                                   0.88
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
+ 
+****************************************
+Report : area
+Design : flex_counter
+Version: G-2012.06
+Date   : Tue Sep 23 22:44:58 2014
+****************************************
+
+Library(s) Used:
+
+    osu05_stdcells (File: /package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db)
+
+Number of ports:                           13
+Number of nets:                            70
+Number of cells:                           57
+Number of combinational cells:             52
+Number of sequential cells:                 5
+Number of macros:                           0
+Number of buf/inv:                         15
+Number of references:                      11
+
+Combinational area:       12528.000000
+Noncombinational area:    7920.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:          20448.000000
+Total area:                 undefined
+1
+Loading db file '/package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : flex_counter
+Version: G-2012.06
+Date   : Tue Sep 23 22:44:58 2014
+****************************************
+
+
+Library(s) Used:
+
+    osu05_stdcells (File: /package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db)
+
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 5    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+flex_counter                              1.859    2.411    6.197    4.270 100.0
+1
