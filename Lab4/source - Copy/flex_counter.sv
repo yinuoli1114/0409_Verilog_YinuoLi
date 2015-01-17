@@ -1,38 +1,32 @@
 // $Id: $
-// File name:   round_counter.sv
-// Created:     11/9/2014
+// File name:   flex_counter.sv
+// Created:     9/19/2014
 // Author:      Yinuo Li
 // Lab Section: 337-04
 // Version:     1.0  Initial Design Entry
-// Description: round counter for rollover value of 16
-
-module round_counter
+// Description: counter
+module flex_counter
   #(
-  parameter NUM_CNT_BITS = 5
+  parameter NUM_CNT_BITS = 4
   )
   (
   input wire clk,
   input wire n_rst,
   input wire clear,
-
   input wire count_enable,
-  //input reg [NUM_CNT_BITS-1:0]rollover_val,
+  input reg [NUM_CNT_BITS-1:0]rollover_val,
   output wire [NUM_CNT_BITS-1:0]count_out,
-  output wire rollover_flag,
-  input wire ed_sel
+  output wire rollover_flag
   );
   
    reg rollover_flag_n;
    reg rollover_flag_c;
    reg [NUM_CNT_BITS-1:0] current;
    reg [NUM_CNT_BITS-1:0] next;
-   wire [NUM_CNT_BITS-1:0] rollover_val;
-   
-   assign count_out = current;
+   reg [NUM_CNT_BITS-1:0] c;
+   reg [NUM_CNT_BITS-1:0] q;
+   assign count_out = q;
    assign rollover_flag = rollover_flag_c;
-   assign rollover_val = (ed_sel == 0) ? 16:1;
-   //assign count_enable = (done||start) ? 1:0;
-   
 
 
 
@@ -42,17 +36,12 @@ module round_counter
 	//next = 0;
 	//current = count_out;
 	rollover_flag_n = rollover_flag_c;
-	next = current;
-	if(clear == 1 && ed_sel == 0)
+	next = c;
+	if(clear == 1)
 	  begin
 	     next = 0;
 	  end
-	else if(clear == 1 && ed_sel == 1)
-	  begin
-	     next = 17;
-	  end
-	
-	else if(count_enable == 1 && ed_sel == 0)
+	else if(count_enable == 1)
 	  begin
 	     next = current + 1'b1;
 	     if(current == rollover_val - 1)
@@ -65,19 +54,6 @@ module round_counter
 		  rollover_flag_n = 0;
 	       end
 	  end // if (count_enable == 1)
-	else if(count_enable == 1 && ed_sel == 1)
-	  begin
-	     next = current - 1'b1;
-	     if(current == rollover_val + 1)
-	       begin
-		  rollover_flag_n = 1;
-	       end
-	     else if(current <= rollover_val)
-	       begin
-		  next = 16;
-		  rollover_flag_n = 0;
-	       end
-	  end // if (count_enable == 1)
 	//current = count_out;
      end // always_comb
    
@@ -87,14 +63,7 @@ module round_counter
     if(n_rst == 0)
       begin
         //rollover_val <= 0;
-	 if(ed_sel == 0)
-	   begin
-	       current <= 0;
-	   end
-	 else begin
-	    current <= 17;
-	 end
-	 
+        current <= 0;
 	 rollover_flag_c <= 0;
 	 
 	    //rollover_flag = 0;
@@ -102,6 +71,8 @@ module round_counter
     else
       begin
 	 current <= next;
+   c <= current;
+   q <= c;
          rollover_flag_c <= rollover_flag_n;
        end
      
@@ -109,6 +80,9 @@ module round_counter
 
   
 endmodule // flex_counter
+
+   
+   
 
 
    
