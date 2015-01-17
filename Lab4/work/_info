@@ -1,0 +1,110 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/ecegrid/a/mg104/ece337/Lab4
+vcontroller
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Z2 I=f:[add5C]NRfJ`OLSQ0j3
+Z3 VCd7_GVG>VaKfGK>Q:LV>I2
+Z4 !s105 controller_sv_unit
+S1
+Z5 d/home/ecegrid/a/mg104/ece337/Lab4
+Z6 w1411521856
+Z7 8source/controller.sv
+Z8 Fsource/controller.sv
+L0 8
+Z9 OL;L;10.1b;51
+r1
+31
+Z10 !s90 -reportprogress|300|source/controller.sv|
+Z11 tCoverage 63 CoverExcludeDefault 1 CoverOpt 1 CoverFEC 0 CoverShortCircuit 0
+!i10b 1
+Z12 !s100 goG>LXXNJ:;a0zzIBlkR92
+!s85 0
+Z13 !s108 1411521858.802179
+Z14 !s107 source/controller.sv|
+vcounter
+R1
+Z15 I76Fij]W6R0VIH`kMPZIAj3
+Z16 VI5hdejR5]=S0bT>E60WA]3
+S1
+R5
+Z17 w1411431002
+Z18 8source/counter.sv
+Z19 Fsource/counter.sv
+L0 8
+R9
+r1
+31
+R11
+Z20 !s100 IMnYcmS;LdPVO;oX8=?<o1
+Z21 !s105 counter_sv_unit
+Z22 !s108 1411431004.979526
+Z23 !s107 source/counter.sv|
+Z24 !s90 -reportprogress|300|source/counter.sv|
+!i10b 1
+!s85 0
+vmoore
+R1
+Z25 !s100 j=Dmz9PfP8o=zd>m>HU<J3
+Z26 I[>8B6o_Pb7JV?`]A^m6ZC2
+Z27 V__`92gJ`>h?ZKi86UPZ;b0
+Z28 !s105 moore_sv_unit
+S1
+R5
+Z29 w1411245486
+Z30 8source/moore.sv
+Z31 Fsource/moore.sv
+L0 8
+R9
+r1
+31
+Z32 !s90 -reportprogress|300|source/moore.sv|
+R11
+Z33 !s108 1411336236.308447
+Z34 !s107 source/moore.sv|
+!i10b 1
+!s85 0
+vsync
+R1
+!i10b 1
+!s100 j`Ic4dRoX34kch[0_U<U93
+I1[U]]H>_?ijR584DQPdd@3
+VD_8QW45@Vn?46ZzGMY@``2
+!s105 sync_sv_unit
+S1
+R5
+w1417418937
+8source/sync.sv
+Fsource/sync.sv
+L0 9
+R9
+r1
+!s85 0
+31
+!s108 1417418939.697000
+!s107 source/sync.sv|
+!s90 -reportprogress|300|source/sync.sv|
+R11
+vtb_moore
+R1
+Z35 I6dUV^GJY8Dl7_NPb9ET9l2
+Z36 VQD06>AeINPlSP796_ebZI1
+Z37 !s105 tb_moore_sv_unit
+S1
+R5
+Z38 w1411336274
+Z39 8source/tb_moore.sv
+Z40 Fsource/tb_moore.sv
+L0 9
+R9
+r1
+31
+Z41 !s90 -reportprogress|300|source/tb_moore.sv|
+R11
+Z42 !s100 lQhlGfz4TKQdcH@=K9WkK0
+Z43 !s108 1411336279.040081
+Z44 !s107 source/tb_moore.sv|
+!i10b 1
+!s85 0

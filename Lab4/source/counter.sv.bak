@@ -1,0 +1,31 @@
+// $Id: $
+// File name:   counter.sv
+// Created:     9/22/2014
+// Author:      Yinuo Li
+// Lab Section: 337-04
+// Version:     1.0  Initial Design Entry
+// Description: counter wrapper
+module counter
+  (
+   input wire clk,
+   input wire n_reset,
+   input wire cnt_up,
+   output wire one_k_samples
+   );
+
+  reg [9:0] 1k = 10'b1111101000;
+   
+flex_counter #(16) IX 
+(
+    .clk(clk), 
+    .n_rst(n_reset), 
+    .clear(0),
+    .count_enable(cnt_up),
+    .rollover_val(1k),
+  //  .count_out(),
+    .rollover_flag(one_k_samples)
+ );
+endmodule // counter
+
+  
+   

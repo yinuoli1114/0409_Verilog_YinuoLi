@@ -1,0 +1,128 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : counter_wrapper
+Version: G-2012.06
+Date   : Mon Dec  1 02:30:41 2014
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: FLEX_COUNTER/current_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FLEX_COUNTER/current_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FLEX_COUNTER/current_reg[1]/CLK (DFFSR)                 0.00       0.00 r
+  FLEX_COUNTER/current_reg[1]/Q (DFFSR)                   0.51       0.51 r
+  FLEX_COUNTER/U55/Y (INVX2)                              0.21       0.72 f
+  FLEX_COUNTER/U36/Y (OAI21X1)                            0.15       0.88 r
+  FLEX_COUNTER/U54/Y (INVX2)                              0.08       0.96 f
+  FLEX_COUNTER/U34/Y (AOI22X1)                            0.15       1.10 r
+  FLEX_COUNTER/U32/Y (AOI22X1)                            0.13       1.24 f
+  FLEX_COUNTER/U31/Y (OAI21X1)                            0.13       1.37 r
+  FLEX_COUNTER/U30/Y (OAI21X1)                            0.15       1.52 f
+  FLEX_COUNTER/U52/Y (INVX2)                              0.10       1.63 r
+  FLEX_COUNTER/U21/Y (NAND2X1)                            0.16       1.79 f
+  FLEX_COUNTER/U18/Y (AND2X1)                             0.45       2.24 f
+  FLEX_COUNTER/U63/Y (NAND2X1)                            0.31       2.55 r
+  FLEX_COUNTER/U61/Y (NOR2X1)                             0.29       2.84 f
+  FLEX_COUNTER/U60/Y (XOR2X1)                             0.19       3.03 r
+  FLEX_COUNTER/U15/Y (NAND2X1)                            0.07       3.10 f
+  FLEX_COUNTER/U14/Y (OAI21X1)                            0.09       3.19 r
+  FLEX_COUNTER/current_reg[3]/D (DFFSR)                   0.00       3.19 r
+  data arrival time                                                  3.19
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  FLEX_COUNTER/current_reg[3]/CLK (DFFSR)                 0.00       4.00 r
+  library setup time                                     -0.23       3.77
+  data required time                                                 3.77
+  --------------------------------------------------------------------------
+  data required time                                                 3.77
+  data arrival time                                                 -3.19
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.58
+
+
+1
+ 
+****************************************
+Report : area
+Design : counter_wrapper
+Version: G-2012.06
+Date   : Mon Dec  1 02:30:41 2014
+****************************************
+
+Library(s) Used:
+
+    osu05_stdcells (File: /package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db)
+
+Number of ports:                           13
+Number of nets:                            17
+Number of cells:                            2
+Number of combinational cells:              0
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                          0
+Number of references:                       2
+
+Combinational area:       14130.000000
+Noncombinational area:    20592.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:          34722.000000
+Total area:                 undefined
+1
+Loading db file '/package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : counter_wrapper
+Version: G-2012.06
+Date   : Mon Dec  1 02:30:42 2014
+****************************************
+
+
+Library(s) Used:
+
+    osu05_stdcells (File: /package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db)
+
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 5    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+counter_wrapper                           0.878    8.131   11.181    9.009 100.0
+  SYNC (sync)                          1.01e-02    4.424    4.264    4.434  49.2
+  FLEX_COUNTER (flex_counter)             0.868    3.707    6.918    4.575  50.8
+1
