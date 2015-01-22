@@ -1,0 +1,823 @@
+# //  ModelSim SE-64 10.1b Apr 26 2012 Linux 2.6.32-504.1.3.el6.x86_64
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim +no_glitch_msg -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -L /home/ecegrid/a/ece337/Class0.5u/GOLD_LIB -Lf /home/ecegrid/a/ece337/Class0.5u/ECE337_IP/vsim -coverage -i -t ps mapped_work.tb_encryptor_sram 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: mapped/encryptor_sram.v(13144): (vopt-2685) [TFMPC] - Too few port connections for 'EIGHT'.  Expected 7, found 6.
+# ** Warning: mapped/encryptor_sram.v(13144): (vopt-2718) [TFMPC] - Missing connection for port 'rollover_flag'.
+# ** Warning: mapped/encryptor_sram.v(13394): (vopt-2685) [TFMPC] - Too few port connections for 'CORE10'.  Expected 19, found 18.
+# ** Warning: mapped/encryptor_sram.v(13394): (vopt-2718) [TFMPC] - Missing connection for port 'load_data'.
+# ** Warning: mapped/encryptor_sram.v(13435): (vopt-2685) [TFMPC] - Too few port connections for 'I2C'.  Expected 14, found 12.
+# ** Warning: mapped/encryptor_sram.v(13435): (vopt-2718) [TFMPC] - Missing connection for port 'en_load'.
+# ** Warning: mapped/encryptor_sram.v(13435): (vopt-2718) [TFMPC] - Missing connection for port 'start'.
+# Loading sv_std.std
+# Loading work.tb_encryptor_sram(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.math_real(body)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.dffsr(metastabilitywrapperarch)#1
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.prim(body)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.dffsr_core(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.and2x2(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.invx2(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.nand3x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.nand2x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.oai21x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.aoi21x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.nor2x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.aoi22x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.or2x2(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.oai22x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.dffposx1(metastabilitywrapperarch)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.dffposx1_core(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.bufx2(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.bufx4(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.invx1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.invx4(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.xor2x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.mux2x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.invx8(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.and2x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.xnor2x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.or2x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.nor3x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.latch(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.hax1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Class0.5u/ECE337_IP/vsim.i2c_bus(true_bus)#1
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(175): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[31] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(175): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[31] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(176): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[30] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(176): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[30] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(177): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[29] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(177): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[29] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(178): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[28] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(178): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[28] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(179): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[27] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(179): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[27] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(180): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[26] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(180): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[26] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(181): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[25] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(181): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[25] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(182): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[24] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(182): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[24] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(183): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[23] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(183): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[23] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(184): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[22] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(184): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[22] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(185): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[21] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(185): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[21] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(186): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[20] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(186): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[20] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(187): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[19] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(187): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[19] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(188): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[18] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(188): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[18] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(189): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[17] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(189): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[17] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(190): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[16] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(190): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[16] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(191): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[15] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(191): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[15] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(192): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[14] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(192): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[14] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(193): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[13] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(193): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[13] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(194): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[12] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(194): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[12] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(195): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[11] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(195): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[11] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(196): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[10] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(196): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[10] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(197): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[9] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(197): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[9] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(198): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[8] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(198): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[8] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(199): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[7] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(199): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[7] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(200): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[6] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(200): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[6] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(201): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[5] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(201): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[5] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(202): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[4] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(202): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[4] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(203): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[3] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(203): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[3] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(204): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[2] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(204): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[2] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(205): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[1] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(205): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[1] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(206): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[0] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(206): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\left_curr_reg[0] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(208): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[31] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(208): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[31] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(210): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[30] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(210): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[30] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(212): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[29] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(212): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[29] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(214): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[28] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(214): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[28] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(216): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[27] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(216): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[27] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(218): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[26] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(218): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[26] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(220): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[25] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(220): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[25] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(222): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[24] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(222): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[24] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(224): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[23] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(224): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[23] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(226): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[22] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(226): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[22] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(228): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[21] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(228): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[21] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(230): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[20] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(230): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[20] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(232): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[19] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(232): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[19] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(234): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[18] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(234): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[18] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(236): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[17] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(236): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[17] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(238): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[16] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(238): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[16] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(240): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[15] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(240): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[15] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(242): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[14] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(242): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[14] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(244): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[13] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(244): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[13] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(246): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[12] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(246): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[12] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(248): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[11] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(248): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[11] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(250): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[10] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(250): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[10] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(251): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[9] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(251): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[9] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(252): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[8] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(252): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[8] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(253): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[7] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(253): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[7] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(254): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[6] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(254): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[6] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(255): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[5] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(255): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[5] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(256): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[4] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(256): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[4] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(257): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[3] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(257): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[3] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(258): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[2] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(258): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[2] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(259): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[1] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(259): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[1] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(260): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[0] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(260): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES1/IOSELECT/\right_curr_reg[0] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3933): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[31] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3933): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[31] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3934): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[30] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3934): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[30] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3935): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[29] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3935): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[29] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3936): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[28] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3936): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[28] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3937): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[27] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3937): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[27] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3938): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[26] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3938): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[26] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3939): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[25] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3939): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[25] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3940): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[24] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3940): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[24] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3941): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[23] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3941): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[23] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3942): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[22] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3942): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[22] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3943): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[21] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3943): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[21] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3944): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[20] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3944): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[20] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3945): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[19] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3945): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[19] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3946): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[18] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3946): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[18] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3947): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[17] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3947): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[17] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3948): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[16] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3948): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[16] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3949): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[15] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3949): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[15] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3950): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[14] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3950): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[14] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3951): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[13] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3951): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[13] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3952): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[12] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3952): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[12] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3953): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[11] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3953): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[11] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3954): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[10] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3954): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[10] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3955): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[9] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3955): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[9] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3956): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[8] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3956): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[8] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3957): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[7] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3957): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[7] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3958): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[6] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3958): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[6] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3959): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[5] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3959): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[5] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3960): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[4] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3960): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[4] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3961): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[3] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3961): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[3] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3962): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[2] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3962): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[2] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3963): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[1] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3963): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[1] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3964): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[0] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3964): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\left_curr_reg[0] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3966): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[31] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3966): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[31] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3968): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[30] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3968): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[30] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3970): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[29] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3970): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[29] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3972): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[28] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3972): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[28] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3974): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[27] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3974): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[27] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3976): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[26] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3976): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[26] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3978): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[25] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3978): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[25] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3980): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[24] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3980): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[24] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3982): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[23] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3982): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[23] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3984): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[22] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3984): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[22] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3986): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[21] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3986): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[21] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3988): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[20] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3988): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[20] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3990): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[19] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3990): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[19] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3992): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[18] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3992): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[18] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3994): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[17] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3994): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[17] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3996): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[16] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3996): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[16] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3998): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[15] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(3998): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[15] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4000): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[14] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4000): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[14] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4002): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[13] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4002): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[13] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4004): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[12] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4004): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[12] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4006): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[11] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4006): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[11] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4008): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[10] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4008): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[10] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4009): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[9] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4009): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[9] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4010): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[8] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4010): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[8] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4011): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[7] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4011): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[7] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4012): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[6] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4012): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[6] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4013): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[5] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4013): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[5] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4014): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[4] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4014): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[4] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4015): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[3] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4015): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[3] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4016): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[2] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4016): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[2] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4017): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[1] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4017): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[1] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4018): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[0] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(4018): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES2/IOSELECT/\right_curr_reg[0] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7616): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[31] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7616): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[31] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7617): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[30] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7617): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[30] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7618): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[29] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7618): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[29] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7619): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[28] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7619): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[28] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7620): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[27] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7620): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[27] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7621): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[26] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7621): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[26] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7622): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[25] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7622): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[25] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7623): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[24] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7623): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[24] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7624): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[23] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7624): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[23] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7625): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[22] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7625): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[22] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7626): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[21] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7626): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[21] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7627): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[20] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7627): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[20] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7628): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[19] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7628): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[19] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7629): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[18] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7629): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[18] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7630): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[17] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7630): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[17] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7631): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[16] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7631): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[16] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7632): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[15] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7632): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[15] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7633): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[14] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7633): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[14] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7634): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[13] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7634): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[13] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7635): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[12] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7635): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[12] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7636): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[11] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7636): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[11] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7637): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[10] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7637): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[10] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7638): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[9] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7638): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[9] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7639): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[8] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7639): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[8] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7640): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[7] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7640): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[7] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7641): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[6] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7641): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[6] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7642): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[5] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7642): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[5] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7643): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[4] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7643): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[4] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7644): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[3] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7644): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[3] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7645): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[2] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7645): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[2] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7646): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[1] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7646): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[1] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7647): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[0] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7647): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\left_curr_reg[0] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7649): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[31] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7649): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[31] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7651): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[30] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7651): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[30] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7653): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[29] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7653): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[29] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7655): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[28] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7655): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[28] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7657): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[27] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7657): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[27] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7659): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[26] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7659): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[26] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7661): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[25] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7661): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[25] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7663): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[24] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7663): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[24] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7665): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[23] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7665): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[23] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7667): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[22] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7667): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[22] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7669): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[21] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7669): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[21] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7671): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[20] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7671): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[20] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7673): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[19] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7673): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[19] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7675): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[18] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7675): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[18] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7677): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[17] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7677): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[17] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7679): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[16] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7679): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[16] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7681): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[15] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7681): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[15] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7683): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[14] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7683): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[14] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7685): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[13] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7685): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[13] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7687): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[12] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7687): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[12] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7689): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[11] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7689): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[11] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7691): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[10] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7691): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[10] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7692): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[9] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7692): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[9] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7693): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[8] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7693): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[8] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7694): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[7] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7694): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[7] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7695): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[6] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7695): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[6] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7696): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[5] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7696): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[5] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7697): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[4] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7697): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[4] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7698): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[3] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7698): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[3] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7699): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[2] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7699): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[2] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7700): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[1] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7700): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[1] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7701): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[0] 
+# ** Warning: (vsim-8822) mapped/encryptor_sram.v(7701): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_encryptor_sram/DUT/TRIPLE_DES/DES3/IOSELECT/\right_curr_reg[0] 

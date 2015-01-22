@@ -1,0 +1,43 @@
+# //  ModelSim SE-64 10.1b Apr 26 2012 Linux 2.6.32-504.1.3.el6.x86_64
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim +no_glitch_msg -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -L /home/ecegrid/a/ece337/Class0.5u/GOLD_LIB -Lf /home/ecegrid/a/ece337/Class0.5u/ECE337_IP/vsim -coverage -i -t ps source_work.tb_maindes_wrapper 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "des_controller(fast)".
+# ** Warning: source/maindes_wrapper.sv(46): (vopt-2685) [TFMPC] - Too few port connections for 'MAIN_CONTROLLER'.  Expected 12, found 11.
+# ** Warning: source/maindes_wrapper.sv(46): (vopt-2718) [TFMPC] - Missing connection for port 'i2c_start'.
+# ** Warning: source/tb_maindes_wrapper.sv(44): (vopt-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 15, found 14.
+# ** Warning: source/tb_maindes_wrapper.sv(44): (vopt-2718) [TFMPC] - Missing connection for port 'ag_enable'.
+# ** Note: (vopt-143) Recognized 1 FSM in module "main_controller(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "addr_gen(fast)".
+# Loading sv_std.std
+# Loading work.tb_maindes_wrapper(fast)
+# Loading work.des(fast)
+add wave *
+add wave -position end  sim:/tb_maindes_wrapper/DUT/ag_enable
+add wave -position end  sim:/tb_maindes_wrapper/DUT/ADDR_GEN/state
+run 1000 ns
+# ** Info: Test completed. PASSED
+#    Time: 758 ns  Scope: tb_maindes_wrapper File: source/tb_maindes_wrapper.sv Line: 106
+add wave -position end  sim:/tb_maindes_wrapper/DUT/MAIN_CONTROLLER/ag_enable
+restart -f
+# Loading sv_std.std
+# Loading work.tb_maindes_wrapper(fast)
+# Loading work.des(fast)
+run 1000 ns
+# ** Info: Test completed. PASSED
+#    Time: 758 ns  Scope: tb_maindes_wrapper File: source/tb_maindes_wrapper.sv Line: 106
+add wave -position end  sim:/tb_maindes_wrapper/DUT/MAIN_CONTROLLER/present_state
+restart -f
+# Loading sv_std.std
+# Loading work.tb_maindes_wrapper(fast)
+# Loading work.des(fast)
+run 1000 ns
+# ** Info: Test completed. PASSED
+#    Time: 758 ns  Scope: tb_maindes_wrapper File: source/tb_maindes_wrapper.sv Line: 106

@@ -1,0 +1,7 @@
+Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity on_chip_sram_wrapper
+-- Compiling architecture wrapper of on_chip_sram_wrapper

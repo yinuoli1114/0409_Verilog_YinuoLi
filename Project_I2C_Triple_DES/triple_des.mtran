@@ -1,0 +1,1588 @@
+# //  ModelSim SE-64 10.1b Apr 26 2012 Linux 2.6.32-504.1.3.el6.x86_64
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim +no_glitch_msg -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -L /home/ecegrid/a/ece337/Class0.5u/GOLD_LIB -Lf /home/ecegrid/a/ece337/Class0.5u/ECE337_IP/vsim -coverage -i -t ps mapped_work.tb_triple_des 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.tb_triple_des(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.prim(body)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.latch(behavioral)#1
+# Loading ieee.math_real(body)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.dffposx1(metastabilitywrapperarch)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.dffposx1_core(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.or2x2(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.invx2(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.oai21x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.aoi22x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.nand3x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.nand2x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.bufx2(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.dffsr(metastabilitywrapperarch)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.dffsr_core(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.and2x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.invx1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.bufx4(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.and2x2(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.nor3x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.nor2x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.invx4(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.mux2x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.aoi21x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.oai22x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.xor2x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.xnor2x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.invx8(behavioral)#1
+# ** Warning: (vsim-8822) mapped/triple_des.v(97): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[31] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(97): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[31] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(100): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[30] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(100): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[30] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(103): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[29] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(103): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[29] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(106): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[28] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(106): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[28] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(109): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[27] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(109): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[27] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(112): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[26] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(112): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[26] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(115): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[25] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(115): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[25] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(118): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[24] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(118): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[24] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(121): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[23] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(121): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[23] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(124): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[22] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(124): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[22] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(127): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[21] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(127): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[21] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(130): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[20] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(130): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[20] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(133): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[19] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(133): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[19] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(136): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[18] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(136): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[18] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(139): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[17] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(139): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[17] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(142): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[16] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(142): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[16] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(145): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[15] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(145): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[15] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(148): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[14] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(148): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[14] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(151): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[13] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(151): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[13] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(154): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[12] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(154): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[12] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(157): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[11] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(157): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[11] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(160): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[10] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(160): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[10] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(163): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[9] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(163): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[9] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(166): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[8] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(166): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[8] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(169): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[7] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(169): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[7] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(172): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[6] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(172): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[6] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(175): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[5] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(175): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[5] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(178): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[4] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(178): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[4] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(181): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[3] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(181): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[3] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(184): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[2] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(184): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[2] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(187): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[1] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(187): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[1] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(190): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[0] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(190): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[0] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(193): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[31] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(193): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[31] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(196): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[30] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(196): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[30] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(199): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[29] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(199): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[29] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(202): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[28] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(202): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[28] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(205): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[27] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(205): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[27] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(208): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[26] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(208): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[26] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(211): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[25] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(211): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[25] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(214): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[24] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(214): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[24] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(217): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[23] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(217): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[23] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(220): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[22] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(220): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[22] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(223): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[21] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(223): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[21] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(226): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[20] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(226): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[20] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(229): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[19] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(229): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[19] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(232): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[18] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(232): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[18] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(235): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[17] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(235): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[17] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(238): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[16] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(238): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[16] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(241): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[15] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(241): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[15] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(244): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[14] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(244): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[14] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(247): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[13] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(247): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[13] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(250): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[12] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(250): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[12] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(253): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[11] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(253): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[11] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(256): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[10] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(256): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[10] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(259): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[9] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(259): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[9] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(262): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[8] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(262): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[8] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(265): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[7] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(265): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[7] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(268): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[6] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(268): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[6] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(271): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[5] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(271): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[5] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(274): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[4] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(274): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[4] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(277): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[3] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(277): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[3] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(280): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[2] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(280): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[2] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(283): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[1] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(283): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[1] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(286): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[0] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(286): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[0] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6767): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[31] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6767): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[31] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6770): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[30] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6770): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[30] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6773): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[29] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6773): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[29] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6776): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[28] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6776): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[28] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6779): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[27] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6779): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[27] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6782): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[26] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6782): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[26] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6785): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[25] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6785): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[25] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6788): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[24] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6788): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[24] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6791): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[23] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6791): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[23] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6794): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[22] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6794): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[22] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6797): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[21] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6797): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[21] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6800): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[20] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6800): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[20] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6803): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[19] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6803): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[19] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6806): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[18] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6806): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[18] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6809): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[17] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6809): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[17] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6812): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[16] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6812): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[16] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6815): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[15] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6815): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[15] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6818): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[14] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6818): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[14] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6821): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[13] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6821): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[13] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6824): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[12] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6824): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[12] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6827): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[11] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6827): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[11] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6830): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[10] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6830): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[10] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6833): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[9] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6833): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[9] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6836): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[8] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6836): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[8] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6839): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[7] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6839): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[7] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6842): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[6] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6842): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[6] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6845): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[5] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6845): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[5] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6848): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[4] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6848): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[4] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6851): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[3] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6851): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[3] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6854): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[2] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6854): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[2] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6857): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[1] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6857): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[1] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6860): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[0] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6860): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[0] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6863): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[31] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6863): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[31] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6866): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[30] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6866): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[30] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6869): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[29] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6869): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[29] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6872): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[28] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6872): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[28] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6875): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[27] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6875): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[27] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6878): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[26] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6878): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[26] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6881): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[25] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6881): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[25] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6884): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[24] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6884): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[24] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6887): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[23] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6887): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[23] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6890): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[22] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6890): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[22] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6893): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[21] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6893): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[21] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6896): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[20] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6896): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[20] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6899): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[19] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6899): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[19] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6902): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[18] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6902): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[18] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6905): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[17] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6905): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[17] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6908): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[16] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6908): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[16] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6911): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[15] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6911): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[15] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6914): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[14] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6914): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[14] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6917): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[13] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6917): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[13] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6920): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[12] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6920): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[12] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6923): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[11] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6923): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[11] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6926): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[10] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6926): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[10] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6929): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[9] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6929): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[9] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6932): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[8] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6932): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[8] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6935): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[7] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6935): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[7] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6938): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[6] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6938): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[6] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6941): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[5] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6941): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[5] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6944): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[4] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6944): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[4] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6947): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[3] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6947): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[3] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6950): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[2] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6950): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[2] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6953): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[1] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6953): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[1] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6956): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[0] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(6956): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[0] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3457): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[31] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3457): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[31] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3460): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[30] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3460): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[30] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3463): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[29] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3463): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[29] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3466): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[28] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3466): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[28] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3469): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[27] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3469): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[27] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3472): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[26] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3472): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[26] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3475): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[25] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3475): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[25] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3478): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[24] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3478): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[24] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3481): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[23] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3481): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[23] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3484): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[22] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3484): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[22] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3487): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[21] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3487): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[21] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3490): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[20] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3490): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[20] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3493): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[19] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3493): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[19] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3496): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[18] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3496): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[18] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3499): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[17] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3499): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[17] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3502): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[16] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3502): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[16] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3505): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[15] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3505): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[15] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3508): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[14] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3508): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[14] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3511): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[13] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3511): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[13] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3514): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[12] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3514): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[12] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3517): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[11] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3517): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[11] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3520): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[10] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3520): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[10] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3523): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[9] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3523): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[9] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3526): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[8] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3526): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[8] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3529): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[7] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3529): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[7] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3532): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[6] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3532): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[6] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3535): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[5] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3535): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[5] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3538): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[4] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3538): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[4] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3541): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[3] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3541): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[3] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3544): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[2] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3544): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[2] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3547): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[1] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3547): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[1] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3550): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[0] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3550): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[0] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3553): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[31] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3553): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[31] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3556): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[30] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3556): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[30] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3559): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[29] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3559): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[29] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3562): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[28] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3562): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[28] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3565): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[27] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3565): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[27] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3568): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[26] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3568): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[26] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3571): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[25] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3571): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[25] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3574): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[24] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3574): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[24] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3577): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[23] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3577): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[23] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3580): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[22] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3580): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[22] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3583): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[21] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3583): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[21] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3586): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[20] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3586): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[20] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3589): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[19] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3589): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[19] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3592): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[18] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3592): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[18] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3595): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[17] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3595): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[17] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3598): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[16] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3598): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[16] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3601): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[15] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3601): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[15] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3604): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[14] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3604): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[14] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3607): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[13] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3607): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[13] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3610): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[12] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3610): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[12] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3613): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[11] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3613): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[11] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3616): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[10] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3616): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[10] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3619): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[9] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3619): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[9] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3622): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[8] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3622): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[8] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3625): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[7] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3625): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[7] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3628): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[6] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3628): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[6] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3631): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[5] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3631): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[5] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3634): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[4] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3634): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[4] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3637): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[3] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3637): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[3] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3640): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[2] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3640): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[2] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3643): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[1] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3643): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[1] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3646): [TFMPC] - Missing Verilog connection for formal VHDL port 'R'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[0] 
+# ** Warning: (vsim-8822) mapped/triple_des.v(3646): [TFMPC] - Missing Verilog connection for formal VHDL port 'S'.
+#         Region: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[0] 
+add wave *
+add wave -position end  sim:/tb_triple_des/DUT/d1tod2_data
+add wave -position end  sim:/tb_triple_des/DUT/d2tod3_data
+add wave -position end  sim:/tb_triple_des/DUT/output_triple
+add wave -position 8  sim:/tb_triple_des/DUT/ready1to2
+add wave -position 9  sim:/tb_triple_des/DUT/ready2to3
+run 1000 ns
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[31] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[30] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[29] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[28] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[27] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[26] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[25] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[24] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[23] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[22] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[21] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[20] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[19] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[18] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[17] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[16] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[15] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[14] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[13] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[12] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[11] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[10] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[9] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[8] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[7] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[6] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[5] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[4] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[3] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[2] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[1] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[0] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[31] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[30] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[29] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[28] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[27] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[26] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[25] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[24] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[23] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[22] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[21] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[20] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[19] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[18] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[17] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[16] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[15] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[14] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[13] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[12] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[11] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[10] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[9] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[8] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[7] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[6] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[5] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[4] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[3] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[2] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[1] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[0] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[31] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[30] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[29] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[28] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[27] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[26] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[25] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[24] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[23] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[22] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[21] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[20] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[19] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[18] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[17] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[16] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[15] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[14] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[13] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[12] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[11] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[10] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[9] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[8] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[7] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[6] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[5] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[4] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[3] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[2] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[1] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[0] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[31] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[30] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[29] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[28] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[27] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[26] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[25] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[24] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[23] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[22] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[21] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[20] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[19] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[18] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[17] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[16] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[15] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[14] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[13] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[12] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[11] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[10] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[9] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[8] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[7] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[6] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[5] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[4] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[3] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[2] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[1] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[0] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[31] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[30] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[29] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[28] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[27] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[26] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[25] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[24] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[23] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[22] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[21] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[20] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[19] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[18] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[17] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[16] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[15] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[14] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[13] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[12] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[11] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[10] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[9] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[8] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[7] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[6] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[5] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[4] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[3] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[2] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[1] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[0] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[31] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[30] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[29] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[28] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[27] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[26] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[25] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[24] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[23] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[22] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[21] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[20] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[19] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[18] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[17] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[16] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[15] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[14] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[13] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[12] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[11] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[10] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[9] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[8] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[7] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[6] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[5] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[4] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[3] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[2] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[1] 
+# ** Warning: DFFPOSX1 instance grabbed an invalid value and is propagating a metastable value
+#    Time: 3310 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[0] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[31] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[30] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[29] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[28] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[27] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[26] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[25] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[24] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[23] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[22] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[21] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[20] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[19] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[18] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[17] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[16] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[15] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[14] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[13] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[12] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[11] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[10] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[9] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[8] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[7] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[6] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[5] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[4] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[3] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[2] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[1] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\right_curr_reg[0] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[31] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[30] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[29] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[28] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[27] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[26] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[25] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[24] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[23] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[22] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[21] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[20] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[19] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[18] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[17] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[16] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[15] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[14] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[13] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[12] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[11] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[10] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[9] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[8] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[7] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[6] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[5] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[4] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[3] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[2] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[1] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES1/IOSELECT/\left_curr_reg[0] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[31] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[30] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[29] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[28] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[27] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[26] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[25] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[24] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[23] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[22] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[21] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[20] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[19] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[18] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[17] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[16] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[15] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[14] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[13] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[12] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[11] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[10] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[9] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[8] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[7] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[6] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[5] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[4] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[3] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[2] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[1] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\right_curr_reg[0] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[31] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[30] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[29] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[28] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[27] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[26] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[25] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[24] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[23] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[22] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[21] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[20] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[19] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[18] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[17] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[16] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[15] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[14] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[13] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[12] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[11] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[10] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[9] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[8] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[7] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[6] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[5] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[4] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[3] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[2] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[1] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES2/IOSELECT/\left_curr_reg[0] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[31] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[30] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[29] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[28] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[27] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[26] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[25] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[24] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[23] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[22] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[21] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[20] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[19] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[18] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[17] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[16] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[15] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[14] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[13] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[12] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[11] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[10] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[9] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[8] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[7] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[6] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[5] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[4] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[3] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[2] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[1] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\right_curr_reg[0] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[31] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[30] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[29] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[28] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[27] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[26] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[25] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[24] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[23] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[22] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[21] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[20] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[19] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[18] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[17] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[16] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[15] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[14] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[13] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[12] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[11] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[10] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[9] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[8] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[7] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[6] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[5] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[4] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[3] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[2] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[1] 
+# ** Warning: DFFPOSX1 instance metastable output value decayed to a '1' value
+#    Time: 3450 ps  Iteration: 0  Instance: /tb_triple_des/DUT/DES3/IOSELECT/\left_curr_reg[0] 
