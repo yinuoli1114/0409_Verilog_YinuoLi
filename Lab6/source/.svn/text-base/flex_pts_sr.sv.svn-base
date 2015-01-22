@@ -1,0 +1,74 @@
+// $Id: $
+// File name:   flex_pts_sr.sv
+// Created:     9/13/2014
+// Author:      Yinuo Li
+// Lab Section: 337-04
+// Version:     1.0  Initial Design Entry
+// Description: PISO shift register
+module flex_pts_sr
+  #(
+    parameter NUM_BITS = 4,
+    parameter SHIFT_MSB = 1
+    )
+   (
+    input wire clk,
+    input wire n_rst,
+    input wire shift_enable,
+    input wire load_enable,
+    input wire [NUM_BITS-1:0] parallel_in,
+    output reg serial_out
+    );
+
+   reg [NUM_BITS-1:0] in;
+  // assign parallel_in[NUM_BITS-1:0] = in[NUM_BITS-1:0];
+
+   integer i;
+
+     if(SHIFT_MSB == 1)
+        begin
+	  assign serial_out = in[NUM_BITS-1];            
+        end
+     if(SHIFT_MSB == 0)
+         begin
+	   assign serial_out = in[0];           
+         end 
+     
+   always_ff @ (posedge clk, negedge n_rst)
+     begin:com
+	if(n_rst == 1'b0)
+	  begin
+	     for(i = 0; i < NUM_BITS; i++)
+	       begin
+		  in[i] <= 1;
+               end
+	  end
+        
+        else if(load_enable == 1) 
+	begin       
+	        for(i = 0; i < NUM_BITS; i++)
+		begin   
+	           in[i] <= parallel_in[i];
+		end
+	 end    
+	 else if((shift_enable == 1)&&(SHIFT_MSB == 1))
+	 begin      
+	   in[NUM_BITS-1:0] <= {in[NUM_BITS-2:0],1'b1};
+	      
+	 end      
+	 else if((shift_enable == 1)&&(SHIFT_MSB == 0))
+	 begin      
+	  in[NUM_BITS-1:0] <= {1'b1,in[NUM_BITS-1:1]};
+	    
+	 end  
+     	
+       
+	  // else: !if(n_rst == 1'b0)
+     end // always_ff @
+     
+  
+  
+endmodule // flex_pts_sr
+
+	 
+	     
+   

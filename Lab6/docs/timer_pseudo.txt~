@@ -1,0 +1,45 @@
+idle:
+{
+  if(start_found == 1)
+  {
+   goto count_state;
+   }
+}
+
+count_state:
+{
+   if(rollover_flag == 1)//rollover_flag=8 // 8 bit for data
+   {
+    goto ack_prep;
+    byte_received = 1;
+    }
+}
+
+ack_prep_s:
+{
+   ack_prep = 1;
+   if(rising_edge_found)
+   {
+    goto check_ack_s;
+   }
+}
+check_ack_s:
+{
+   check_ack = 1;
+   if(falling_edge_found)
+   {
+    goto ack_done_s;
+    }
+}
+ack_done_s:
+{
+   ack_done = 1;
+   if(start_found == 1)
+   {
+    goto count_state;
+    }
+   if(stop_found == 1)
+   {
+    goto idle;
+    }
+}

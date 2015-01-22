@@ -1,0 +1,29 @@
+// $Id: $
+// File name:   sda_sel.sv
+// Created:     10/4/2014
+// Author:      Yinuo Li
+// Lab Section: 337-04
+// Version:     1.0  Initial Design Entry
+// Description: sda_sel
+
+module sda_sel
+  (
+   input wire tx_out,
+   input wire [1:0] sda_mode,
+   output wire sda_out
+   );
+
+   always_comb
+     begin
+	case(sda_mode)
+	  2'b00:
+	    sda_out = 1;
+	  2'b01:
+	    sda_out = 0;
+	  2'b10:
+	    sda_out = 1;
+	  2'b11:
+	    sda_out = tx_out;
+	endcase // case (sda_mode)
+     end // always_comb
+endmodule // sda_sel

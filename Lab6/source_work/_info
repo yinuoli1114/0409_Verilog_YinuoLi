@@ -1,0 +1,56 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/ecegrid/a/mg104/ece337/Lab6
+T_opt
+V_nIETWOHc9C8A^A4BKVeX3
+04 11 4 work tb_scl_edge fast 0
+=1-002219a71b2e-546d019c-b4651-3ccc
+o-quiet -auto_acc_if_foreign -work source_work/ -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -Lf /home/ecegrid/a/ece337/Class0.5u/ECE337_IP/vsim
+n@_opt
+OL;O;10.1b;51
+vscl_edge
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Ig^D]oIF;ShgRhjAVjkDCN1
+VULO=miRAeL4=bVNGNGXW10
+S1
+Z2 d/home/ecegrid/a/mg104/ece337/Lab6
+w1412648412
+8source/scl_edge.sv
+Fsource/scl_edge.sv
+L0 9
+Z3 OL;L;10.1b;51
+r1
+31
+Z4 o-sv -work source_work
+Z5 tCoverage 63 CoverExcludeDefault 1 CoverOpt 1 CoverFEC 0 CoverShortCircuit 0
+!s100 GZ9B=Z074US8k:_2Re;@^1
+!s105 scl_edge_sv_unit
+!s108 1416429966.778213
+!s107 source/scl_edge.sv|
+!s90 -sv|-work|source_work|source/scl_edge.sv|
+!i10b 1
+!s85 0
+vtb_scl_edge
+R1
+IWkD;I4m>OM7FDl[;o`T>G1
+VZ[[ZTXf]mIX762R0I9DnA0
+S1
+R2
+w1412640487
+8source/tb_scl_edge.sv
+Fsource/tb_scl_edge.sv
+L0 9
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 HgJmY2TAX2Fg@;>T2b[VY3
+!s105 tb_scl_edge_sv_unit
+!s85 0
+!s108 1416429967.246291
+!s107 source/tb_scl_edge.sv|
+!s90 -sv|-work|source_work|source/tb_scl_edge.sv|
