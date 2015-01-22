@@ -1,0 +1,107 @@
+// $Id: $
+// File name:   tb_maindes.sv
+// Created:     12/9/2014
+// Author:      Jason Lin
+// Lab Section: 337-04
+// Version:     1.0  Initial Design Entry
+// Description: testbench for main des controller
+
+`timescale 1 ns / 10 ps
+
+module tb_maindes_wrapper ();
+	parameter CLK_PERIOD = 7;
+
+	reg tb_clk;
+	reg tb_n_rst;
+	reg tb_i2c_stop;
+	reg tb_i2c_rw;
+	reg tb_data_ready;
+	//reg tb_next_data;
+	reg [63:0] tb_key1;
+	reg [63:0] tb_key2;
+	//reg tb_des_ready;
+	//reg tb_dir_io_sel;
+	reg tb_ag_enable;
+	reg tb_key_activate_key1;
+	reg tb_key_activate_key2;
+	reg [15:0] tb_address;
+	reg tb_read_en;
+	reg tb_write_en;
+	reg [63:0] tb_des_out;
+	reg [63:0] tb_des_in;
+
+	maindes_wrapper DUT (
+		.clk(tb_clk),
+		.n_rst(tb_n_rst),
+		.i2c_stop(tb_i2c_stop),
+		.data_ready(tb_data_ready),
+		//.next_data(tb_next_data),
+		//.des_ready(tb_des_ready),
+		//.dir_io_sel(tb_dir_io_sel),
+		.ag_enable(tb_ag_enable),
+		.key_activate_key1(tb_key_activate_key1),
+		.key_activate_key2(tb_key_activate_key2),
+		.key1(tb_key1),
+		.key2(tb_key2),
+		.read_en(tb_read_en),
+		.write_en(tb_write_en),
+		.des_out(tb_des_out),
+		.des_in(tb_des_in)
+	);
+	
+	always
+	begin : CLK_GEN
+		tb_clk = 1'b0;
+		#(CLK_PERIOD / 2);
+		tb_clk = 1'b1;
+		#(CLK_PERIOD / 2);
+	end
+
+	initial
+	begin
+		tb_n_rst = 1'b0;
+		@(posedge tb_clk);
+		tb_n_rst = 1'b1;
+		tb_i2c_stop = 1'b0;
+		tb_i2c_rw = 1'b0;
+		tb_data_ready = 1'b0;
+		//tb_next_data = 1'b0;
+		tb_key1 = 64'h3b3898371520f75e;
+		tb_key2 = 64'h8c1f609efca32a78;
+		tb_des_in = 64'h1234567890abcdef;
+		#(CLK_PERIOD*3);
+		@(posedge tb_clk);
+		tb_data_ready = 1'b1;
+		@(posedge tb_clk);
+		tb_data_ready = 1'b0;
+		#(CLK_PERIOD*3);
+		@(posedge tb_clk);
+		tb_data_ready = 1'b1;
+		@(posedge tb_clk);
+		tb_data_ready = 1'b0;
+		#(CLK_PERIOD*5);
+		tb_data_ready = 1'b1;
+		@(posedge tb_clk);
+		tb_data_ready = 1'b0;
+		while(tb_next_data != 1'b1) begin
+			#(CLK_PERIOD);
+		end
+		@(posedge tb_clk);
+		tb_des_in = tb_des_out;
+		#(CLK_PERIOD*3);
+		tb_data_ready = 1'b1;
+		tb_i2c_rw = 1'b1;
+		#(CLK_PERIOD*3);
+		while(tb_next_data != 1'b1) begin
+			#(CLK_PERIOD);
+		end
+		if(tb_des_out == 64'h1234567890abcdef) begin
+			$info("Test completed. PASSED");
+		end else begin
+			$error("Test completed. FAILED");
+		end
+	end
+
+endmodule
+		
+

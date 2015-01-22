@@ -1,0 +1,259 @@
+Information: Updating design information... (UID-85)
+Information: Timing loop detected. (OPT-150)
+	I2C/CORE10/U169/A I2C/CORE10/U169/Y I2C/CORE10/key_reg/CLK I2C/CORE10/key_reg/Q I2C/CORE10/U36/A I2C/CORE10/U36/Y 
+Information: Timing loop detected. (OPT-150)
+	I2C/CORE10/U62/A I2C/CORE10/U62/Y I2C/CORE10/U63/C I2C/CORE10/U63/Y I2C/CORE10/U169/B I2C/CORE10/U169/Y I2C/CORE10/key_reg/CLK I2C/CORE10/key_reg/Q 
+Warning: Disabling timing arc between pins 'CLK' and 'Q' on cell 'I2C/CORE10/key_reg'
+         to break a timing loop. (OPT-314)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : encryptor_sram
+Version: G-2012.06
+Date   : Fri Dec 12 22:23:39 2014
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: TRIPLE_DES/DES3/DESCONTROLLER/state_reg[4]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: TRIPLE_DES/DES3/IOSELECT/right_curr_reg[12]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  TRIPLE_DES/DES3/DESCONTROLLER/state_reg[4]/CLK (DFFSR)
+                                                          0.00       0.00 r
+  TRIPLE_DES/DES3/DESCONTROLLER/state_reg[4]/Q (DFFSR)
+                                                          0.51       0.51 f
+  TRIPLE_DES/DES3/DESCONTROLLER/U9/Y (BUFX4)              0.22       0.73 f
+  TRIPLE_DES/DES3/DESCONTROLLER/U116/Y (NAND3X1)          0.12       0.84 r
+  TRIPLE_DES/DES3/DESCONTROLLER/U117/Y (NOR2X1)           0.20       1.04 f
+  TRIPLE_DES/DES3/DESCONTROLLER/round_number[4] (des_controller_0)
+                                                          0.00       1.04 f
+  TRIPLE_DES/DES3/KEY/round_number[4] (key_wrapper_0)     0.00       1.04 f
+  TRIPLE_DES/DES3/KEY/KEY_SHIFT/roundSel[4] (key_shift_0)
+                                                          0.00       1.04 f
+  TRIPLE_DES/DES3/KEY/KEY_SHIFT/U86/Y (INVX2)             0.14       1.18 r
+  TRIPLE_DES/DES3/KEY/KEY_SHIFT/U248/Y (NAND3X1)          0.10       1.28 f
+  TRIPLE_DES/DES3/KEY/KEY_SHIFT/U143/Y (INVX1)            0.10       1.38 r
+  TRIPLE_DES/DES3/KEY/KEY_SHIFT/U178/Y (AND2X2)           0.19       1.57 r
+  TRIPLE_DES/DES3/KEY/KEY_SHIFT/U103/Y (BUFX4)            0.25       1.82 r
+  TRIPLE_DES/DES3/KEY/KEY_SHIFT/U28/Y (INVX2)             0.10       1.92 f
+  TRIPLE_DES/DES3/KEY/KEY_SHIFT/U105/Y (OR2X2)            0.17       2.09 f
+  TRIPLE_DES/DES3/KEY/KEY_SHIFT/U190/Y (NAND2X1)          0.10       2.19 r
+  TRIPLE_DES/DES3/KEY/KEY_SHIFT/U309/Y (NOR2X1)           0.13       2.33 f
+  TRIPLE_DES/DES3/KEY/KEY_SHIFT/U310/Y (NAND3X1)          0.14       2.47 r
+  TRIPLE_DES/DES3/KEY/KEY_SHIFT/U311/Y (OR2X2)            0.30       2.77 r
+  TRIPLE_DES/DES3/KEY/KEY_SHIFT/k_out[2] (key_shift_0)
+                                                          0.00       2.77 r
+  TRIPLE_DES/DES3/KEY/KEY_PERMUTATION2/kin[2] (key_permutation2_0)
+                                                          0.00       2.77 r
+  TRIPLE_DES/DES3/KEY/KEY_PERMUTATION2/kout[6] (key_permutation2_0)
+                                                          0.00       2.77 r
+  TRIPLE_DES/DES3/KEY/kout[6] (key_wrapper_0)             0.00       2.77 r
+  TRIPLE_DES/DES3/KXOR/key[6] (key_xor_0)                 0.00       2.77 r
+  TRIPLE_DES/DES3/KXOR/U5/Y (XNOR2X1)                     0.25       3.02 r
+  TRIPLE_DES/DES3/KXOR/out[6] (key_xor_0)                 0.00       3.02 r
+  TRIPLE_DES/DES3/SUB/data_in[6] (substitution_0)         0.00       3.02 r
+  TRIPLE_DES/DES3/SUB/SB7/data_in[0] (Sbox7_0)            0.00       3.02 r
+  TRIPLE_DES/DES3/SUB/SB7/U26/Y (INVX2)                   0.12       3.14 f
+  TRIPLE_DES/DES3/SUB/SB7/U6/Y (INVX2)                    0.09       3.22 r
+  TRIPLE_DES/DES3/SUB/SB7/U73/Y (NAND2X1)                 0.15       3.37 f
+  TRIPLE_DES/DES3/SUB/SB7/U76/Y (NAND2X1)                 0.17       3.55 r
+  TRIPLE_DES/DES3/SUB/SB7/U78/Y (AOI21X1)                 0.13       3.67 f
+  TRIPLE_DES/DES3/SUB/SB7/U56/Y (MUX2X1)                  0.15       3.83 r
+  TRIPLE_DES/DES3/SUB/SB7/U86/Y (NOR3X1)                  0.23       4.05 f
+  TRIPLE_DES/DES3/SUB/SB7/U100/Y (NAND3X1)                0.22       4.27 r
+  TRIPLE_DES/DES3/SUB/SB7/data_out[0] (Sbox7_0)           0.00       4.27 r
+  TRIPLE_DES/DES3/SUB/dout[4] (substitution_0)            0.00       4.27 r
+  TRIPLE_DES/DES3/PERM/data_in[4] (permutation_0)         0.00       4.27 r
+  TRIPLE_DES/DES3/PERM/U37/Y (INVX2)                      0.08       4.35 f
+  TRIPLE_DES/DES3/PERM/U42/Y (NAND2X1)                    0.09       4.44 r
+  TRIPLE_DES/DES3/PERM/U44/Y (NAND2X1)                    0.06       4.50 f
+  TRIPLE_DES/DES3/PERM/data_out[12] (permutation_0)       0.00       4.50 f
+  TRIPLE_DES/DES3/IOSELECT/int_in[12] (des_io_select_0)
+                                                          0.00       4.50 f
+  TRIPLE_DES/DES3/IOSELECT/U6/Y (INVX1)                   0.10       4.60 r
+  TRIPLE_DES/DES3/IOSELECT/U182/Y (OAI21X1)               0.07       4.67 f
+  TRIPLE_DES/DES3/IOSELECT/right_curr_reg[12]/D (DFFPOSX1)
+                                                          0.00       4.67 f
+  data arrival time                                                  4.67
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  TRIPLE_DES/DES3/IOSELECT/right_curr_reg[12]/CLK (DFFPOSX1)
+                                                          0.00       2.00 r
+  library setup time                                     -0.32       1.68
+  data required time                                                 1.68
+  --------------------------------------------------------------------------
+  data required time                                                 1.68
+  data arrival time                                                 -4.67
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -3.00
+
+
+1
+ 
+****************************************
+Report : area
+Design : encryptor_sram
+Version: G-2012.06
+Date   : Fri Dec 12 22:23:39 2014
+****************************************
+
+Library(s) Used:
+
+    osu05_stdcells (File: /package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db)
+
+Number of ports:                           39
+Number of nets:                           382
+Number of cells:                           11
+Number of combinational cells:              3
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                          2
+Number of references:                      11
+
+Combinational area:       2479446.000000
+Noncombinational area:    615744.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:          3095190.000000
+Total area:                 undefined
+1
+Loading db file '/package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : encryptor_sram
+Version: G-2012.06
+Date   : Fri Dec 12 22:23:40 2014
+****************************************
+
+
+Library(s) Used:
+
+    osu05_stdcells (File: /package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db)
+
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 5    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+encryptor_sram                            6.820  450.672  922.554  457.493 100.0
+  I2C (i2c)                               2.823  100.665   85.083  103.488  22.6
+    CORE10 (i2c_controller)               0.124    5.257   12.916    5.380   1.2
+    CORE9 (timer)                         0.459    5.725    7.355    6.184   1.4
+      EIGHT (flex_counter_NUM_CNT_BITS4)
+                                          0.402    5.630    6.640    6.032   1.3
+    CORE7 (tx_sr)                         1.584   66.602   51.655   68.185  14.9
+      COREd (flex_pts_sr_NUM_BITS64_SHIFT_MSB1)
+                                          1.584   66.602   51.538   68.185  14.9
+    CORE6 (rx_sr)                      1.18e-02    8.307    5.699    8.318   1.8
+      COREc (flex_stp_sr_NUM_BITS8_SHIFT_MSB1)
+                                       6.24e-03    8.305    5.581    8.311   1.8
+    CORE5 (decode)                        0.289    7.494    3.987    7.783   1.7
+    CORE4 (sda_sel)                       0.000    0.000    0.110 1.10e-07   0.0
+    CORE3 (scl_edge)                      0.262    2.600    1.229    2.861   0.6
+    CORE2 (sync_0)                     6.72e-02    2.338    1.066    2.405   0.5
+    CORE1 (sync_1)                     2.62e-02    2.343    1.066    2.370   0.5
+  ADDR_GENERATOR (addr_gen)               0.585   39.969   42.755   40.554   8.9
+    add_76 (addr_gen_DW01_inc_1)          0.000    0.000    3.936 3.94e-06   0.0
+    add_88 (addr_gen_DW01_inc_0)          0.000    0.000    3.936 3.94e-06   0.0
+  DISTRIBUTOR (output_byte)               1.582   66.601   45.545   68.183  14.9
+  ACCUMULATOR (input_byte)                1.828   69.813   47.291   71.642  15.7
+  K2 (key_o2)                             0.000    0.000    9.869 9.87e-06   0.0
+  K1 (key_o1)                             0.000    0.000    9.869 9.87e-06   0.0
+  TRIPLE_DES (triple_des)                 0.000  169.524  676.620  169.525  37.1
+    DES3 (des_0)                          0.000   56.508  228.073   56.508  12.4
+      PERM (permutation_0)                0.000    0.000    7.810 7.81e-06   0.0
+      SUB (substitution_0)                0.000    0.000   86.988 8.70e-05   0.0
+        SB8 (Sbox8_0)                     0.000    0.000    9.911 9.91e-06   0.0
+        SB7 (Sbox7_0)                     0.000    0.000   10.800 1.08e-05   0.0
+        SB6 (Sbox6_0)                     0.000    0.000   12.337 1.23e-05   0.0
+        SB5 (Sbox5_0)                     0.000    0.000   11.335 1.13e-05   0.0
+        SB4 (Sbox4_0)                     0.000    0.000   11.023 1.10e-05   0.0
+        SB3 (Sbox3_0)                     0.000    0.000   10.823 1.08e-05   0.0
+        SB2 (Sbox2_0)                     0.000    0.000    9.596 9.60e-06   0.0
+        SB1 (Sbox1_0)                     0.000    0.000   11.164 1.12e-05   0.0
+      KXOR (key_xor_0)                    0.000    0.000   10.368 1.04e-05   0.0
+      KEY (key_wrapper_0)                 0.000    0.000   81.092 8.11e-05   0.0
+        KEY_PERMUTATION2 (key_permutation2_0)
+                                          0.000    0.000    0.000    0.000   0.0
+        KEY_SHIFT (key_shift_0)           0.000    0.000   81.092 8.11e-05   0.0
+        KEY_PREMUTATION1 (key_permutation1_0)
+                                          0.000    0.000    0.000    0.000   0.0
+      EXP (expansion_0)                   0.000    0.000    0.000    0.000   0.0
+      DESCONTROLLER (des_controller_0)    0.000    5.118   10.314    5.118   1.1
+      IOSELECT (des_io_select_0)          0.000   51.390   31.388   51.390  11.2
+    DES2 (des_1)                          0.000   56.508  222.657   56.508  12.4
+      PERM (permutation_1)                0.000    0.000    6.337 6.34e-06   0.0
+      SUB (substitution_1)                0.000    0.000   86.002 8.60e-05   0.0
+        SB8 (Sbox8_1)                     0.000    0.000    9.617 9.62e-06   0.0
+        SB7 (Sbox7_1)                     0.000    0.000   10.408 1.04e-05   0.0
+        SB6 (Sbox6_1)                     0.000    0.000   12.528 1.25e-05   0.0
+        SB5 (Sbox5_1)                     0.000    0.000   10.093 1.01e-05   0.0
+        SB4 (Sbox4_1)                     0.000    0.000   11.497 1.15e-05   0.0
+        SB3 (Sbox3_1)                     0.000    0.000   10.742 1.07e-05   0.0
+        SB2 (Sbox2_1)                     0.000    0.000   10.362 1.04e-05   0.0
+        SB1 (Sbox1_1)                     0.000    0.000   10.662 1.07e-05   0.0
+      KXOR (key_xor_1)                    0.000    0.000    9.954 9.95e-06   0.0
+      KEY (key_wrapper_1)                 0.000    0.000   78.332 7.83e-05   0.0
+        KEY_PERMUTATION2 (key_permutation2_1)
+                                          0.000    0.000    0.000    0.000   0.0
+        KEY_SHIFT (key_shift_1)           0.000    0.000   78.220 7.82e-05   0.0
+        KEY_PREMUTATION1 (key_permutation1_1)
+                                          0.000    0.000    0.000    0.000   0.0
+      EXP (expansion_1)                   0.000    0.000    0.000    0.000   0.0
+      DESCONTROLLER (des_controller_1)    0.000    5.118   10.487    5.118   1.1
+      IOSELECT (des_io_select_1)          0.000   51.390   31.545   51.390  11.2
+    DES1 (des_2)                          0.000   56.508  225.859   56.508  12.4
+      PERM (permutation_2)                0.000    0.000    6.290 6.29e-06   0.0
+      SUB (substitution_2)                0.000    0.000   86.995 8.70e-05   0.0
+        SB8 (Sbox8_2)                     0.000    0.000   10.398 1.04e-05   0.0
+        SB7 (Sbox7_2)                     0.000    0.000   10.533 1.05e-05   0.0
+        SB6 (Sbox6_2)                     0.000    0.000   12.065 1.21e-05   0.0
+        SB5 (Sbox5_2)                     0.000    0.000   11.307 1.13e-05   0.0
+        SB4 (Sbox4_2)                     0.000    0.000   11.475 1.15e-05   0.0
+        SB3 (Sbox3_2)                     0.000    0.000   10.169 1.02e-05   0.0
+        SB2 (Sbox2_2)                     0.000    0.000   10.615 1.06e-05   0.0
+        SB1 (Sbox1_2)                     0.000    0.000   10.435 1.04e-05   0.0
+      KXOR (key_xor_2)                    0.000    0.000   10.183 1.02e-05   0.0
+      KEY (key_wrapper_2)                 0.000    0.000   80.164 8.02e-05   0.0
+        KEY_PERMUTATION2 (key_permutation2_2)
+                                          0.000    0.000    0.000    0.000   0.0
+        KEY_SHIFT (key_shift_2)           0.000    0.000   80.164 8.02e-05   0.0
+        KEY_PREMUTATION1 (key_permutation1_2)
+                                          0.000    0.000    0.000    0.000   0.0
+      EXP (expansion_2)                   0.000    0.000    0.000    0.000   0.0
+      DESCONTROLLER (des_controller_2)    0.000    5.118   10.490    5.118   1.1
+      IOSELECT (des_io_select_2)          0.000   51.390   31.624   51.390  11.2
+  MAIN_CONTROLLER (main_controller)    2.39e-03    4.099    5.263    4.102   0.9
+1
